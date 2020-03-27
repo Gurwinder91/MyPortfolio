@@ -1,0 +1,59 @@
+.my-flex-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  border: 1px solid $light-lime;
+  border-radius: 3px;
+  color: $light-lime;
+  line-height: 1;
+  cursor: pointer;
+  margin-left: 10px;
+  font-size: 13px;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+
+  &:hover {
+    background-color: rgba(100, 255, 218, 0.07);
+  }
+}
+
+.link {
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+  padding: 12px 10px;
+  text-decoration: none;
+  cursor: pointer;
+  text-decoration-skip-ink: auto;
+  display: inline-block;
+  color: $creamy;
+
+  &:hover {
+    color: $light-lime;
+  }
+}
+
+
+.fix-orientation{
+    width: 40px;
+      position: fixed;
+      bottom: 0;
+      right: 40px;
+      z-index: 10;
+      color: $dull-white;
+
+      > * {
+        @extend .my-flex-box;
+        flex-direction: column;
+
+        &::after {
+          content: "";
+          display: block;
+          width: 1px;
+          height: 90px;
+          background-color: $creamy;
+          margin: 0px auto;
+        }
+    }
+}

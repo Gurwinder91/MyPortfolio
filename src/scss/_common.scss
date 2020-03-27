@@ -1,0 +1,29 @@
+ul,
+ol {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  margin: 0px 0px 10px;
+}
+
+p {
+  margin: 0px 0px 15px;
+  word-spacing: 1px;
+  letter-spacing: 1px;
+  line-height: 1.4;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}

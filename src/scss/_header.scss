@@ -1,0 +1,56 @@
+header {
+  @extend .my-flex-box;
+  height: 100px;
+  padding: 0 50px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: $black;
+  box-shadow: none;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  
+  nav {
+    @extend .my-flex-box;
+    justify-content: space-between;
+    width: 100%;
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+
+    .logo {
+        @extend .my-flex-box;
+      a {
+        color: $light-lime;
+        height: 42px;
+        width: auto;
+
+        img {
+          height: 42px;
+          width: auto;
+        }
+      }
+    }
+
+    .nav-section {
+      @extend .my-flex-box;
+
+      ol {
+        @extend .my-flex-box;
+        color: $dull-white;
+        counter-reset: item;
+
+        li {
+          margin: 0 10px;
+          font-size: 13px;      
+
+          &::before {
+            counter-increment: item;
+            content: "0" counter(item) ".";
+            text-align: right;
+            color: $light-lime;
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+}

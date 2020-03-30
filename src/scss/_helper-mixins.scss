@@ -1,0 +1,5 @@
+@mixin max-width-48 {
+    @media (max-width: 48em){
+        @content;
+    }
+}

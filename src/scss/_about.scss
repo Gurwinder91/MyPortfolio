@@ -3,6 +3,11 @@
   margin: 0px auto;
   padding: 150px 0px;
   max-width: 1000px;
+  z-index: -1;
+
+  @include max-width-48 {
+    padding: 100px 0;
+  }
 
   h3 {
     display: block;
@@ -13,7 +18,7 @@
       counter-increment: section-count;
       content: "0" counter(section-count) ".";
       margin-right: 10px;
-      font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+      font-family: $monospace-font-family;
       font-weight: normal;
       color: $light-lime;
       font-size: 20px;
@@ -21,9 +26,13 @@
     }
 
     &::after {
+      @include max-width-48 {
+        width: 288px;
+      }
+
       content: "";
       display: inline-block;
-      height: 1px;
+      height: 2px;
       width: 300px;
       background-color: $light-white;
       margin-left: 20px;
@@ -33,86 +42,108 @@
   }
 
   > div {
+    @include max-width-48 {
+      flex-direction: column;
+    }
+
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+  }
 
-    .about-content {
-      color: $dull-white;
-      width: 60%;
+  .about-content {
+    @include max-width-48 {
+      width: 100%;
+    }
 
-      ul {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(120px, 200px));
-      }
+    color: $dull-white;
+    width: 60%;
 
-      li {
-        position: relative;
-        margin-bottom: 10px;
-        padding-left: 20px;
-        font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
-        font-size: 13px;
+    ul {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(120px, 220px));
+    }
 
-        &::before {
-          content: "▹";
-          position: absolute;
-          left: 0px;
-          color: $light-lime;
-          line-height: 12px;
-        }
+    li {
+      position: relative;
+      margin-bottom: 10px;
+      padding-left: 20px;
+      font-family: $monospace-font-family;
+      font-size: 1.1em;
+      font-weight: 500;
+
+      &::before {
+        content: "▹";
+        position: absolute;
+        left: 0px;
+        color: $light-lime;
+        line-height: 12px;
       }
     }
 
-    .my-image {
-      position: relative;
-      width: 30%;
+    .link {
+      @include max-width-48 {
+        color: $light-lime;
+      }
+      padding: 0;
+    }
+  }
 
-      a {
-        &:hover .overlay {
-          opacity: 0;
-        }
+  .my-image {
 
-        &:hover::after {
-          top: 10px;
-          left: 10px;
-        }
+    @include max-width-48 {
+      margin: 60px auto 0;
+    }
 
-        &::after {
-          content: "";
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          border-radius: 3px;
-          transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
-          top: 12px;
-          left: 12px;
-          z-index: -1;
-          border: 2px solid $light-lime;
+    position: relative;
+    width: 40%;
 
-        }
+    a {
+      &:hover .overlay {
+        opacity: 0;
       }
 
-      .overlay {
+      &:hover::after {
+        top: 10px;
+        left: 10px;
+      }
+
+      &::after {
+        content: "";
         position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        opacity: 0.4;
-        transition: 0.5s ease;
-        background-color: $light-lime;
-      }
-
-      img {
-        display: block;
         width: 100%;
-        height: auto;
+        height: 100%;
+        border-radius: 3px;
+        transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+        top: 12px;
+        left: 12px;
+        z-index: -1;
+        border: 2px solid $light-lime;
       }
+    }
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
     }
 
     a {
       padding: 0;
       color: $light-lime;
     }
+  }
+  .overlay {
+    @include max-width-48 {
+      opacity: 0;
+    }
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.4;
+    transition: 0.5s ease;
+    background-color: $light-lime;
   }
 }

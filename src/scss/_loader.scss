@@ -1,0 +1,56 @@
+#loader {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+
+  svg {
+    height: 100px;
+    width: auto;
+    animation: fadeOut 0.5s cubic-bezier(0.2, 0.4, 0.6, 0.8) 2s alternate forwards;
+
+    polygon {
+      stroke-dasharray: 1000;
+      animation: dash 5s ease-in-out forwards;
+    }
+
+    text {
+      visibility: hidden;
+      animation: fadeIn 1s ease-in 1s alternate forwards;
+    }
+  }
+
+  @keyframes dash {
+    0% {
+      stroke-dashoffset: 1000;
+    }
+    100% {
+      stroke-dashoffset: 0;
+    }
+  }
+
+  @keyframes fadeIn {
+    0% {
+        opacity: 0.1;
+    }
+    50% {
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 1;
+        visibility: visible;
+    }
+  }
+
+  @keyframes fadeOut {
+    0% {
+        height: 100px;
+    }
+    50% {
+        height: 50px;
+    }
+    100% {
+        height: 0px;
+    }
+  }
+}

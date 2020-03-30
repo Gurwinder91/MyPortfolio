@@ -1,5 +1,5 @@
-header {
-  @extend .my-flex-box;
+.header {
+  @extend %my-flex-box;
   height: 100px;
   padding: 0 50px;
   position: fixed;
@@ -9,15 +9,15 @@ header {
   background-color: $black;
   box-shadow: none;
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
-  
-  nav {
-    @extend .my-flex-box;
+
+  .nav-section {
+    @extend %my-flex-box;
     justify-content: space-between;
     width: 100%;
-    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+    font-family: $monospace-font-family;
 
     .logo {
-        @extend .my-flex-box;
+      @extend %my-flex-box;
       a {
         color: $light-lime;
         height: 42px;
@@ -29,28 +29,147 @@ header {
         }
       }
     }
+  }
 
-    .nav-section {
-      @extend .my-flex-box;
+  .nav-items {
+    @extend %my-flex-box;
 
-      ol {
-        @extend .my-flex-box;
-        color: $dull-white;
-        counter-reset: item;
+    @include max-width-48 {
+      display: none;
+    }
+  }
 
-        li {
-          margin: 0 10px;
-          font-size: 13px;      
+  .nav-item-list {
+    @extend %my-flex-box;
+    color: $dull-white;
+    counter-reset: item;
 
-          &::before {
-            counter-increment: item;
-            content: "0" counter(item) ".";
-            text-align: right;
-            color: $light-lime;
-            font-size: 13px;
-          }
-        }
+    li {
+      margin: 0 10px;
+      font-size: 13px;
+
+      &::before {
+        counter-increment: item;
+        content: "0" counter(item) ".";
+        text-align: right;
+        color: $light-lime;
+        font-size: 13px;
       }
     }
+  }
+
+  #menu-icon {
+    @include max-width-48 {
+      display: block;
+    }
+    cursor: pointer;
+    display: none;
+
+    div {
+      height: 2px;
+      background-color: $light-lime;
+      width: 35px;
+      position: relative;
+
+      &::after {
+        content: "";
+        height: 2px;
+        background-color: $light-lime;
+        width: 30px;
+        position: absolute;
+        top: 9px;
+        right: 0;
+      }
+
+      &::before {
+        content: "";
+        height: 2px;
+        background-color: $light-lime;
+        width: 40px;
+        position: absolute;
+        bottom: 9px;
+        right: 0;
+      }
+    }
+  }
+}
+
+#display-sm-nav {
+  display: block;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  height: 100vh;
+  width: 50vw;
+  background-color: $black;
+  outline: 0;
+
+  &.hide {
+    @extend %hide;
+  }
+
+  .aside {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 40px;
+    width: 100%;
+    height: inherit;
+  }
+
+  .nav-section {
+    flex-direction: column;
+    height: inherit;
+    justify-content: center;
+  }
+
+  .nav-item-list {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  li {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    font-size: 20px;
+    font-family: $monospace-font-family;
+    margin: 0 0 20px;
+
+    &::before {
+      font-size: 1em;
+    }
+  }
+
+  .close {
+    justify-content: flex-end;
+    display: flex;
+    position: relative;
+    top: 20px;
+
+    &::after {
+      content: "";
+      height: 2px;
+      background-color: $light-lime;
+      width: 35px;
+      position: absolute;
+      transform: rotate(45deg);
+    }
+
+    &::before {
+      content: "";
+      height: 2px;
+      background-color: $light-lime;
+      width: 35px;
+      position: absolute;
+      transform: rotate(135deg);
+    }
+  }
+
+  .btn {
+    align-self: center;
+    margin: 0;
   }
 }

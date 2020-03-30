@@ -1,0 +1,37 @@
+%my-flex-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+%fix-orientation {
+  
+  @include max-width-48 {
+    display: none;
+  }
+  
+  display: block;
+  width: 40px;
+  position: fixed;
+  bottom: 0;
+  right: 40px;
+  color: $dull-white;
+
+  > * {
+    @extend %my-flex-box;
+    flex-direction: column;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 1px;
+      height: 90px;
+      background-color: $creamy;
+      margin: 0px auto;
+    }
+  }
+}
+
+%hide {
+  display: none;
+}

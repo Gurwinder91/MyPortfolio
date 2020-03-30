@@ -1,32 +1,45 @@
 #intro {
-  @extend .my-flex-box;
+  @extend %my-flex-box;
+
+  z-index: -1;
+
+  @include max-width-48 {
+    padding: 150px 0 100px;
+  }
 
   flex-direction: column;
   align-items: flex-start;
   margin: 0px auto;
-  padding: 150px 0px;
+  padding: 150px 0;
+  min-height: 100vh;
 
   h1 {
-    font-size: 16px;
+    font-size: 1em;
     color: $light-lime;
-    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+    font-family: $monospace-font-family;
     font-weight: normal;
     margin: 0px 0px 20px 3px;
   }
 
   h2 {
-    font-size: 60px;
+    @include max-width-48 {
+      font-size: 2.7em;
+    }
+    font-size: 4em;
     margin: 0px;
-    letter-spacing: 2px;
-    word-spacing: 2px;
+    letter-spacing: 0.02em;
+    word-spacing: 0.1em;
   }
 
   h3 {
-    font-size: 50px;
+    @include max-width-48 {
+      font-size: 2.7em;
+    }
+    font-size: 3em;
     line-height: 1.1;
     color: $dull-white;
-    letter-spacing: 1px;
-    word-spacing: 1px;
+    letter-spacing: 0.02em;
+    word-spacing: 0.1em;
   }
 
   div {
@@ -36,9 +49,9 @@
     color: $dull-white;
   }
 
+
   a {
     margin-top: 50px;
-    padding: 1.25rem 1.75rem;
     margin-left: 0;
   }
 }

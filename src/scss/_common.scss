@@ -17,13 +17,13 @@ h6 {
 
 p {
   margin: 0px 0px 15px;
-  word-spacing: 1px;
+  word-spacing: 2px;
   letter-spacing: 1px;
   line-height: 1.4;
+  font-size: 1.1em;
+  font-weight: 500;
 }
 
-*,
-::before,
-::after {
-  box-sizing: inherit;
+* {
+  box-sizing: border-box;
 }

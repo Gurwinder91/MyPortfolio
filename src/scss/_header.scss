@@ -9,6 +9,7 @@
   background-color: $black;
   box-shadow: none;
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  z-index: 1;
 
   .nav-section {
     @extend %my-flex-box;
@@ -19,7 +20,7 @@
     .logo {
       @extend %my-flex-box;
       a {
-        color: $light-lime;
+        color: $lime;
         height: 42px;
         width: auto;
 
@@ -52,7 +53,7 @@
         counter-increment: item;
         content: "0" counter(item) ".";
         text-align: right;
-        color: $light-lime;
+        color: $lime;
         font-size: 13px;
       }
     }
@@ -60,21 +61,25 @@
 
   #menu-icon {
     @include max-width-48 {
-      display: block;
+      display: flex;
     }
     cursor: pointer;
     display: none;
+    height: 2.5em;
+    width: 42px;
+    justify-content: flex-end;
 
     div {
       height: 2px;
-      background-color: $light-lime;
+      background-color: $lime;
       width: 35px;
       position: relative;
+      top: 20px;
 
       &::after {
         content: "";
         height: 2px;
-        background-color: $light-lime;
+        background-color: $lime;
         width: 30px;
         position: absolute;
         top: 9px;
@@ -84,7 +89,7 @@
       &::before {
         content: "";
         height: 2px;
-        background-color: $light-lime;
+        background-color: $lime;
         width: 40px;
         position: absolute;
         bottom: 9px;
@@ -144,26 +149,34 @@
   }
 
   .close {
-    justify-content: flex-end;
     display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+  }
+  .close-icon {
+    cursor: pointer;
     position: relative;
-    top: 20px;
+    height: 36px;
+    width: 36px;
+    display: flex;
 
     &::after {
       content: "";
       height: 2px;
-      background-color: $light-lime;
+      background-color: $lime;
       width: 35px;
       position: absolute;
+      top: 15px;
       transform: rotate(45deg);
     }
 
     &::before {
       content: "";
       height: 2px;
-      background-color: $light-lime;
+      background-color: $lime;
       width: 35px;
       position: absolute;
+      top: 15px;
       transform: rotate(135deg);
     }
   }

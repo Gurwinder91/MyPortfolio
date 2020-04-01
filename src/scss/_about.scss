@@ -9,7 +9,9 @@
   }
 
   h3 {
-    display: block;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
     font-size: 32px;
     margin: 10px 0px 40px;
 
@@ -25,18 +27,12 @@
     }
 
     &::after {
-      @include max-width-48 {
-        width: 288px;
-      }
-
       content: "";
-      display: inline-block;
       height: 2px;
-      width: 300px;
       background-color: $light-white;
       margin-left: 20px;
-      position: relative;
-      bottom: 10px;
+      width: 30%;
+      align-self: center;
     }
   }
 

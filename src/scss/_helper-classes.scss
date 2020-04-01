@@ -1,39 +1,19 @@
 .btn {
-  border: 1px solid $lime;
-  border-radius: 3px;
-  color: $lime;
-  line-height: 1;
-  cursor: pointer;
-  margin-left: 10px;
-  font-size: 13px;
-  padding: 0.75rem 1rem;
-  text-decoration: none;
-
-  &:hover {
-    background-color: rgba(100, 255, 218, 0.07);
-  }
+  @extend %btn;
 
   &-lg {
     font-size: 1em;
-    padding: 1.1rem 2.3rem
+    padding: 1.1rem 2.3rem;
   }
 
   &-x-lg {
     font-size: 1.1em;
-    padding: 1.25rem 3.0rem;
+    padding: 1.25rem 3rem;
   }
 }
 
-.link {
-  font-family: $monospace-font-family;
-  padding: 12px 10px;
-  text-decoration: none;
-  cursor: pointer;
-  text-decoration-skip-ink: auto;
-  display: inline-block;
-  color: $creamy;
 
-  &:hover {
-    color: $lime;
-  }
+
+.link {
+  @extend %link;
 }

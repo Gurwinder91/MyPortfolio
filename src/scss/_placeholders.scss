@@ -1,8 +1,3 @@
-%my-flex-box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
 %fix-orientation {
   
@@ -18,7 +13,9 @@
   color: $dull-white;
 
   > * {
-    @extend %my-flex-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
 
     &::after {
@@ -34,4 +31,55 @@
 
 %hide {
   display: none;
+}
+
+
+%btn {
+  border: 1px solid $lime;
+  border-radius: 3px;
+  color: $lime;
+  line-height: 1;
+  cursor: pointer;
+  margin-left: 10px;
+  font-size: 13px;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: normal;
+  position: relative;
+  transition: color 0.5s ease-in-out;
+
+  &:hover {
+    color: $black;
+    font-weight: bold;
+    &::after{
+      height: 100%;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    height: 0;
+    width: 100%;
+    background-color: $lime;
+    transition: height 0.25s ease;
+    z-index: -1;
+  }
+}
+
+%link{
+  font-family: $monospace-font-family;
+  padding: 12px 10px;
+  text-decoration: none;
+  cursor: pointer;
+  text-decoration-skip-ink: auto;
+  display: inline-block;
+  color: $creamy;
+
+  &:hover {
+    color: $lime;
+  }
 }

@@ -1,10 +1,12 @@
 .header {
-  @extend %my-flex-box;
 
   @include max-width-48 {
     padding: 0 30px;
   }
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 100px;
   padding: 0 50px;
   position: fixed;
@@ -14,15 +16,19 @@
   background-color: $black;
   box-shadow: none;
   z-index: 1;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) .1s;
 
   .nav-section {
-    @extend %my-flex-box;
+    display: flex;
+    align-items: center;
     justify-content: space-between;
     width: 100%;
     font-family: $monospace-font-family;
 
     .logo {
-      @extend %my-flex-box;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       a {
         color: $lime;
         height: 42px;
@@ -37,7 +43,9 @@
   }
 
   .nav-items {
-    @extend %my-flex-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     @include max-width-48 {
       display: none;
@@ -45,7 +53,9 @@
   }
 
   .nav-item-list {
-    @extend %my-flex-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: $dull-white;
     counter-reset: item;
 
@@ -84,7 +94,7 @@
 
     .hamburger {
       transform: rotate(0deg);
-      transition: transform .22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+      transition: transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 
       &::before {
         width: 120%;
@@ -102,7 +112,7 @@
 
     .close {
       transform: rotate(225deg);
-      transition: transform .22s cubic-bezier(0.215, 0.61, 0.355, 1) .12s;
+      transition: transform 0.22s cubic-bezier(0.215, 0.61, 0.355, 1) 0.12s;
 
       &::before {
         width: 100%;
@@ -201,41 +211,9 @@
     }
   }
 
-  .close {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-end;
-  }
-  .close-icon {
-    cursor: pointer;
-    position: relative;
-    height: 36px;
-    width: 36px;
-    display: flex;
-
-    &::after {
-      content: "";
-      height: 2px;
-      background-color: $lime;
-      width: 35px;
-      position: absolute;
-      top: 15px;
-      transform: rotate(45deg);
-    }
-
-    &::before {
-      content: "";
-      height: 2px;
-      background-color: $lime;
-      width: 35px;
-      position: absolute;
-      top: 15px;
-      transform: rotate(135deg);
-    }
-  }
-
   .btn {
     align-self: center;
     margin: 0;
+    z-index: 1;
   }
 }

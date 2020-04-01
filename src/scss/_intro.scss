@@ -1,5 +1,7 @@
 #intro {
-  @extend %my-flex-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   z-index: -1;
 
@@ -53,5 +55,6 @@
   a {
     margin-top: 50px;
     margin-left: 0;
+    text-transform: none;
   }
 }

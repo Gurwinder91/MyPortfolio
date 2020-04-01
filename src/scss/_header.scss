@@ -1,5 +1,10 @@
 .header {
   @extend %my-flex-box;
+
+  @include max-width-48 {
+    padding: 0 30px;
+  }
+
   height: 100px;
   padding: 0 50px;
   position: fixed;
@@ -8,7 +13,6 @@
   left: 0;
   background-color: $black;
   box-shadow: none;
-  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
   z-index: 1;
 
   .nav-section {
@@ -65,35 +69,85 @@
     }
     cursor: pointer;
     display: none;
-    height: 2.5em;
-    width: 42px;
-    justify-content: flex-end;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    -webkit-tap-highlight-color: transparent;
+    z-index: 1;
 
-    div {
-      height: 2px;
-      background-color: $lime;
-      width: 35px;
+    div[role="menu"] {
       position: relative;
-      top: 20px;
+      display: inline-block;
+      width: 30px;
+      height: 24px;
+    }
+
+    .hamburger {
+      transform: rotate(0deg);
+      transition: transform .22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+
+      &::before {
+        width: 120%;
+        top: -10px;
+        opacity: 1;
+        transition: top 0.1s ease-in 0.25s, opacity 0.1s ease-in 0s;
+      }
+      &::after {
+        width: 80%;
+        bottom: -10px;
+        transform: rotate(0deg);
+        transition: bottom 0.1s ease-in 0.25s, transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0s;
+      }
+    }
+
+    .close {
+      transform: rotate(225deg);
+      transition: transform .22s cubic-bezier(0.215, 0.61, 0.355, 1) .12s;
+
+      &::before {
+        width: 100%;
+        top: 0px;
+        opacity: 0;
+        transition: top 0.1s ease-out 0s, opacity 0.1s ease-out 0.12s;
+      }
+      &::after {
+        width: 100%;
+        bottom: 0px;
+        transform: rotate(-90deg);
+        transition: bottom 0.1s ease-out 0s, transform 0.22s cubic-bezier(0.215, 0.61, 0.355, 1) 0.12s;
+      }
+    }
+
+    .hamburger,
+    .close {
+      background-color: $lime;
+      position: absolute;
+      width: 30px;
+      height: 2px;
+      top: 50%;
+      left: 0px;
+      right: 0px;
+      border-radius: 3px;
 
       &::after {
         content: "";
         height: 2px;
+        display: block;
         background-color: $lime;
-        width: 30px;
         position: absolute;
-        top: 9px;
         right: 0;
+        left: auto;
+        border-radius: 4px;
       }
-
       &::before {
         content: "";
         height: 2px;
+        display: block;
         background-color: $lime;
-        width: 40px;
         position: absolute;
-        bottom: 9px;
         right: 0;
+        left: auto;
+        border-radius: 4px;
       }
     }
   }
@@ -106,9 +160,8 @@
   bottom: 0px;
   right: 0px;
   height: 100vh;
-  width: 50vw;
+  width: 70vw;
   background-color: $black;
-  outline: 0;
 
   &.hide {
     @extend %hide;

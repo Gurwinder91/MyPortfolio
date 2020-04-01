@@ -4,9 +4,7 @@ body {
 }
 
 body {
-  outline: none;
   font-family: $sans-serif-font-family;
-  margin: 0;
   background-color: $black;
   color: $creamy;
   overflow-x: hidden;
@@ -38,7 +36,7 @@ body {
 #content {
   main {
     @include max-width-48 {
-      padding: 0px 50px;
+      padding: 0px 30px;
     }
     min-height: 100vh;
     counter-reset: section-count;

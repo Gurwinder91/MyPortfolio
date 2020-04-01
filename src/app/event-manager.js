@@ -4,8 +4,7 @@ import selector from './selectors';
 import menuIconClickhandler from './sidenav';
 import scrollHandler from './header-scroll';
 
-selector.menuIcon.addEventListener('click', menuIconClickhandler.bind(null, 'show'));
-selector.closeSidenav.addEventListener('click', menuIconClickhandler.bind(null, 'hide'));
+selector.menuElement.addEventListener('click', menuIconClickhandler);
 
 document.addEventListener('scroll', scrollHandler());
 

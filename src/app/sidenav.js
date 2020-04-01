@@ -9,10 +9,12 @@ const menuIconClickhandler = (event) => {
         classList.remove('hamburger');
         classList.add('close');
         selectors.displaySmNav.classList.remove('hide');
+        selectors.displaySmNav.dataset.hide = false;
     } else {
         classList.add('hamburger');
         classList.remove('close');
         selectors.displaySmNav.classList.add('hide');
+        selectors.displaySmNav.dataset.hide = true;
     }
 };
 

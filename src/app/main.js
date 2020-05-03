@@ -1,4 +1,6 @@
 import '../scss/main.scss';
+import '../assets/my-resume.pdf';
+import '../assets/img/title-logo.svg'
 
 (function () {
     setTimeout(() => {      

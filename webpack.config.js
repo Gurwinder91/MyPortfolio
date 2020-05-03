@@ -35,13 +35,22 @@ module.exports = {
         use: ['html-loader']
       },
       {
-        test: /\.(jpg|png)$/,
+        test: /\.(png|jpg|gif|svg)$/,
         use: [{
           loader: 'file-loader',
           options: {
             name: '[name].[ext]',
-            outputPath: 'img/',
-            publicPath: 'img/'
+            outputPath: 'assets/img/',
+            publicPath: 'assets/img/',
+          }
+        }]
+      },
+      {
+        test: /\.(pdf)$/,
+        use: [{
+          loader: 'file-loader',
+          options: {
+            name: '[name].[ext]',
           }
         }]
       }

@@ -34,3 +34,32 @@ p {
 ::selection{
   background-color: $selectionColor;
 }
+
+
+.section-heading{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    font-size: 32px;
+    margin: 10px 0px 40px;
+
+    &::before {
+        counter-increment: section-count;
+        content: "0" counter(section-count) ".";
+        margin-right: 10px;
+        font-family: $monospace-font-family;
+        font-weight: normal;
+        color: $lime;
+        font-size: 20px;
+        text-align: end;
+    }
+
+    &::after {
+        content: "";
+        height: 2px;
+        background-color: $light-white;
+        margin-left: 20px;
+        width: 30%;
+        align-self: center;
+    }
+}

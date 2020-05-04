@@ -1,22 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gurwinder | Portfolio</title>
-    <link rel="icon" type="image/svg+xml" href="assets/img/title-logo.svg" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"
-    />
-  </head>
-  <body>
-    <div id="root">
-      <template id="root_template">
-       <div id="root_content">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gurwinder | Portfolio</title>
+  <link rel="icon" type="image/svg+xml" href="assets/img/title-logo.svg" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" />
+</head>
+
+<body>
+  <div id="root">
+    <template id="root_template">
+      <div id="root_content">
         <header class="header">
           <nav class="nav-section">
             <div class="logo">
@@ -27,7 +25,7 @@
             <div class="nav-items">
               <ol class="nav-item-list">
                 <li><a class="link" href="#about">About</a></li>
-                <li><a class="link" href="#workExperience">Experience</a></li>
+                <li><a class="link" href="#experience">Experience</a></li>
                 <li><a class="link" href="#projects">Work</a></li>
                 <li><a class="link" href="#contactMe">Contact</a></li>
               </ol>
@@ -39,21 +37,16 @@
               </div>
             </div>
           </nav>
-          <div
-            id="display-sm-nav"
-            aria-label="sidenav"
-            data-hide="true"
-            class="hide"
-          >
+          <div id="display-sm-nav" aria-label="sidenav" data-hide="true" class="hide">
             <aside class="aside">
               <nav class="nav-section">
                 <ol class="nav-item-list">
-                  <li><a class="link" href="#about">About</a></li>
-                  <li><a class="link" href="#workExperience">Experience</a></li>
-                  <li><a class="link" href="#projects">Work</a></li>
-                  <li><a class="link" href="#contactMe">Contact</a></li>
+                  <li><a class="link" aria-label="close-dialog" href="#about">About</a></li>
+                  <li><a class="link" aria-label="close-dialog" href="#experience">Experience</a></li>
+                  <li><a class="link" aria-label="close-dialog" href="#projects">Work</a></li>
+                  <li><a class="link" aria-label="close-dialog" href="#contactMe">Contact</a></li>
                 </ol>
-                <a class="btn btn-x-lg" href="/my-resume.pdf">Resume</a>
+                <a class="btn btn-x-lg" aria-label="close-dialog" target="_blank" rel="nofollow noopener noreferrer" href="/my-resume.pdf">Resume</a>
               </nav>
             </aside>
           </div>
@@ -61,17 +54,18 @@
         <div orientation="left" class="left-fix">
           <ul>
             <li>
-              <a class="link" href="/">
+              <a class="link" href="https://github.com/Gurwinder91/" target="_blank" rel="nofollow noopener noreferrer">
                 <i class="fab fa-github"></i>
               </a>
             </li>
             <li>
-              <a class="link" href="/">
+              <a class="link" href="https://www.linkedin.com/in/gurwinder-singh-somal-2277a4137/" target="_blank"
+                rel="nofollow noopener noreferrer">
                 <i class="fab fa-linkedin-in"></i>
               </a>
             </li>
             <li>
-              <a class="link" href="/">
+              <a class="link" href="https://twitter.com/9gurwinder" target="_blank" rel="nofollow noopener noreferrer">
                 <i class="fab fa-twitter"></i>
               </a>
             </li>
@@ -79,11 +73,12 @@
         </div>
         <div orientation="right" class="right-fix">
           <div>
-            <a class="link" href="/">somal.gurwinder7@gmail.com</a>
+            <a class="link" href="mailTo:somal.gurwinder7@gmail.com">somal.gurwinder7@gmail.com</a>
           </div>
         </div>
         <div id="content">
           <main>
+            <!--INTRO -->
             <section id="intro">
               <h1>
                 Hi, my name is
@@ -106,13 +101,15 @@
                 Get In Touch
               </a>
             </section>
+
+            <!--ABOUT -->
             <section id="about">
-              <h3>About Me</h3>
+              <h3 class="section-heading">About Me</h3>
               <div>
                 <div class="about-content">
                   <!-- <div> -->
                   <p>
-                    Hello! I'm Brittany, a software engineer based in Boston, MA
+                    Hello! I'm Gurwinder Singh, a software engineer based in Bengaluru, IN
                     who enjoys building things that live on the internet. I
                     develop exceptional websites and web apps that provide
                     intuitive, pixel-perfect user interfaces with efficient and
@@ -121,20 +118,11 @@
 
                   <p>
                     Shortly after graduating from
-                    <a
-                      class="link"
-                      href="https://www.ccis.northeastern.edu/"
-                      target="_blank"
-                      rel="nofollow noopener noreferrer"
-                      >Northeastern University</a
-                    >, I joined the engineering team at
-                    <a
-                      class="link"
-                      href="https://www.upstatement.com/"
-                      target="_blank"
-                      rel="nofollow noopener noreferrer"
-                      >Upstatement</a
-                    >
+                    <a class="link" href="http://www.ptu.ac.in/" target="_blank"
+                      rel="nofollow noopener noreferrer">Punjab Technical University</a>, I joined the engineering team
+                    at
+                    <a class="link" href="https://www.arielsoftwares.com/" target="_blank"
+                      rel="nofollow noopener noreferrer">Ariel Software Solutions</a>
                     where I work on a wide variety of interesting and meaningful
                     projects on a daily basis.
                   </p>
@@ -143,13 +131,14 @@
                   </p>
                   <!-- </div> -->
                   <ul>
-                    <li>Asp.net Core</li>
-                    <li>Angular</li>
-                    <li>Javascript</li>
-                    <li>Progress Web Apps</li>
-                    <li>C#/TS</li>
-                    <li>FlexBox/SCSS</li>
-                    <li>HTML/CSS</li>
+                    <li class="list-item">Asp.net Core</li>
+                    <li class="list-item">Angular</li>
+                    <li class="list-item">Reactjs</li>
+                    <li class="list-item">Javascript</li>
+                    <li class="list-item">Progress Web Apps</li>
+                    <li class="list-item">C#/TS</li>
+                    <li class="list-item">FlexBox/SCSS</li>
+                    <li class="list-item">HTML/CSS</li>
                   </ul>
                 </div>
                 <div class="my-image">
@@ -160,46 +149,123 @@
                 </div>
               </div>
             </section>
-            <!--<section id="workExperience">adasdasd</section>
-          <section id="projects">asdasdsad</section>
-          <section id="contactMe">adasdsadsad</section> -->
+
+            <!--EXPERIENCE -->
+            <section id="experience">
+              <h3 class="section-heading md">Professional Experience</h3>
+              <h3 class="section-heading sm">Experience</h3>
+              <div>
+                <div class="experience-content">
+                  <div id="my-js-tabs">
+                    <nav class="js-tabs__nav">
+                      <ul class="js-tabs__tabs-container">
+                        <li class="js-tabs__tab active">RDAlabs</li>
+                        <li class="js-tabs__tab">Taxback</li>
+                        <li class="js-tabs__tab">ONE BCG</li>
+                        <li class="js-tabs__tab">Ariel</li>
+                      </ul>
+                      <div class="js-tabs__marker"></div>
+                    </nav>
+
+                    <ul class="js-tabs__content-container">
+                      <li class="js-tabs__content active">
+                        <h5>ASP.NET Core Full Stack Engineer
+                          <a href="https://rdalabs.com/" target="_blank" rel="nofollow noopener noreferrer"
+                            class="link">@RDAlabs</a></h5>
+                        <div class="experience-details">
+                          <h6>Apiril, 2020 - Present</h6>
+                          <ul>
+                            <li class="list-item">Created Angular 7 architecture
+                              using custom NPM libraries, Angular Material and Flex layout</li>
+                            <li class="list-item">Developed
+                              Microservices based architecture in backend with SQS and lambda as a
+                              message broker</li>
+                            <li class="list-item">Created docker images for the backend services and angular
+                              application</li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="js-tabs__content">
+                        <h5>ASP.NET Core Full Stack Engineer
+                          <a href="https://www.taxback.com/" class="link" target="_blank"
+                            rel="nofollow noopener noreferrer">@Taxback</a></h5>
+                        <div class="experience-details">
+                          <h6>August, 2018 - Apiril, 2018</h6>
+                          <ul>
+                            <li class="list-item">Created Angular 7 architecture
+                              using custom NPM libraries, Angular Material and Flex layout</li>
+                            <li class="list-item">Developed
+                              Microservices based architecture in backend with SQS and lambda as a
+                              message broker</li>
+                            <li class="list-item">Created docker images for the backend services and angular
+                              application</li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="js-tabs__content">
+                        <h5>ASP.NET Developer
+                          <a href="https://www.onebcg.com/" class="link" target="_blank"
+                            rel="nofollow noopener noreferrer">@ONE BCG</a></h5>
+                        <div class="experience-details">
+                          <h6> Feb, 2018 - August, 2018</h6>
+                          <ul>
+                            <li class="list-item">Created Angular 7 architecture
+                              using custom NPM libraries, Angular Material and Flex layout</li>
+                            <li class="list-item">Developed
+                              Microservices based architecture in backend with SQS and lambda as a
+                              message broker</li>
+                            <li class="list-item">Created docker images for the backend services and angular
+                              application</li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="js-tabs__content">
+                        <h5>ASP.NET Developer
+                          <a href="https://www.arielsoftwares.com/" class="link" target="_blank"
+                            rel="nofollow noopener noreferrer">@Ariel</a></h5>
+                        <div class="experience-details">
+                          <h6>Jan, 2016 - Jan, 2018</h6>
+                          <ul>
+                            <li class="list-item">Created Angular 7 architecture
+                              using custom NPM libraries, Angular Material and Flex layout</li>
+                            <li class="list-item">Developed
+                              Microservices based architecture in backend with SQS and lambda as a
+                              message broker</li>
+                            <li class="list-item">Created docker images for the backend services and angular
+                              application</li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+            </section>
           </main>
         </div>
 
         <footer></footer>
-       </div> 
-      </template>
-    </div>
-    <div id="loader">
-      <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 84 96">
-        <title>Logo</title>
-        <g id="Logo" transform="translate(-8.000000, -2.000000)">
-          <g transform="translate(11.000000, 5.000000)">
-            <polygon
-              id="Shape"
-              stroke="#c1fc4e"
-              fill="#1d0742"
-              stroke-width="5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              points="39 0 0 22 0 67 39 90 78 68 78 23"
-            ></polygon>
-            <text
-              x="38"
-              y="60"
-              text-anchor="middle"
-              fill="#c1fc4e"
-              font-size="45"
-              font-weight="900"
-            >
-              G
-            </text>
-          </g>
+      </div>
+    </template>
+  </div>
+  <div id="loader">
+    <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 84 96">
+      <title>Logo</title>
+      <g id="Logo" transform="translate(-8.000000, -2.000000)">
+        <g transform="translate(11.000000, 5.000000)">
+          <polygon id="Shape" stroke="#c1fc4e" fill="#1d0742" stroke-width="5" stroke-linecap="round"
+            stroke-linejoin="round" points="39 0 0 22 0 67 39 90 78 68 78 23"></polygon>
+          <text x="38" y="60" text-anchor="middle" fill="#c1fc4e" font-size="45" font-weight="900">
+            G
+          </text>
         </g>
-      </svg>
-    </div>
-  </body>
-  <noscript>
-    This app works best with JavaScript enabled.
-  </noscript>
+      </g>
+    </svg>
+  </div>
+</body>
+<noscript>
+  This app works best with JavaScript enabled.
+</noscript>
+
 </html>

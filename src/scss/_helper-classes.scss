@@ -17,3 +17,20 @@
 .link {
   @extend %link;
 }
+
+.list-item{
+  position: relative;
+      margin-bottom: 10px;
+      padding-left: 20px;
+      font-family: $monospace-font-family;
+      font-size: 1.1em;
+      font-weight: 500;
+
+      &::before {
+        content: "▹";
+        position: absolute;
+        left: 0px;
+        color: $lime;
+        line-height: 12px;
+      }
+}

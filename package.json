@@ -27,6 +27,7 @@
     "webpack-dev-server": "^3.10.3"
   },
   "dependencies": {
+    "js-tabs": "^1.0.1",
     "smooth-scroll": "^16.1.3"
   }
 }

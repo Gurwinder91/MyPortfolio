@@ -1,6 +1,6 @@
 import '../scss/main.scss';
 import '../assets/my-resume.pdf';
-import '../assets/img/title-logo.svg'
+import '../assets/img/title-logo.svg';
 
 (function () {
     setTimeout(() => {      
@@ -13,6 +13,7 @@ import '../assets/img/title-logo.svg'
 
         require('./event-manager');
         require('./smooth-scroll');
+        require('./tabs');
     }, 2500);
 })();
 

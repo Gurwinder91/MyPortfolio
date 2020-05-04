@@ -83,3 +83,10 @@
     color: $lime;
   }
 }
+
+%section{
+  position: relative;
+  margin: 0px auto;
+  padding: 150px 0px;
+  max-width: 1000px;
+}

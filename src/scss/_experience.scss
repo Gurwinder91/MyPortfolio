@@ -1,0 +1,52 @@
+@import "~js-tabs/src/js-tabs-base";
+
+#experience {
+    @extend %section;
+    max-width: 700px;
+
+    @include max-width-48 {
+        padding: 100px 0;
+    }
+
+    .md{
+        display: flex;
+        @include max-width-60 {
+            display: none;
+        }
+    }
+    .sm {
+        display: none;
+        @include max-width-60 {
+            display: flex;
+        }
+    }
+
+    .js-tabs__tabs-container {
+        display: flex;
+        justify-content: center;
+        .js-tabs__tab {
+            width: 20%;
+            font-family: $monospace-font-family;
+            font-size: 13px;
+            @include max-width-48 {
+                width: 30%;
+            }
+        }
+    }
+    .js-tabs__content {
+        margin: 10px 0;
+        .link {
+            color: $lime;
+        }
+        h5 {
+            margin: 0;
+        }
+        .experience-details {
+            color: $dull-white;
+        }
+        .list-item {
+            font-size: 0.9em;
+            font-family: $sans-serif-font-family;
+        }
+    }
+}

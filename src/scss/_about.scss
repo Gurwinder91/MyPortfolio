@@ -1,39 +1,8 @@
 #about {
-  position: relative;
-  margin: 0px auto;
-  padding: 150px 0px;
-  max-width: 1000px;
+  @extend %section;
 
   @include max-width-48 {
     padding: 100px 0;
-  }
-
-  h3 {
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-start;
-    font-size: 32px;
-    margin: 10px 0px 40px;
-
-    &::before {
-      counter-increment: section-count;
-      content: "0" counter(section-count) ".";
-      margin-right: 10px;
-      font-family: $monospace-font-family;
-      font-weight: normal;
-      color: $lime;
-      font-size: 20px;
-      text-align: end;
-    }
-
-    &::after {
-      content: "";
-      height: 2px;
-      background-color: $light-white;
-      margin-left: 20px;
-      width: 30%;
-      align-self: center;
-    }
   }
 
   > div {
@@ -57,23 +26,6 @@
     ul {
       display: grid;
       grid-template-columns: repeat(2, minmax(120px, 220px));
-    }
-
-    li {
-      position: relative;
-      margin-bottom: 10px;
-      padding-left: 20px;
-      font-family: $monospace-font-family;
-      font-size: 1.1em;
-      font-weight: 500;
-
-      &::before {
-        content: "▹";
-        position: absolute;
-        left: 0px;
-        color: $lime;
-        line-height: 12px;
-      }
     }
 
     .link {

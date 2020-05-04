@@ -1,9 +1,9 @@
 
 import selectors from './selectors';
 
-const menuIconClickhandler = (event) => {
+export default (event) => {
     event.stopPropagation();
-    console.log(event);
+
     let classList = event.currentTarget.firstElementChild.classList;
     if (classList.contains('hamburger')) {
         classList.remove('hamburger');
@@ -13,9 +13,17 @@ const menuIconClickhandler = (event) => {
     } else {
         classList.add('hamburger');
         classList.remove('close');
-        selectors.displaySmNav.classList.add('hide');
-        selectors.displaySmNav.dataset.hide = true;
+        hideSidenav();
     }
 };
 
-export default menuIconClickhandler;
+export const closeSidenav = () => {
+    selectors.menuElement.firstElementChild.classList.add('hamburger');
+    selectors.menuElement.firstElementChild.classList.remove('close');
+    hideSidenav();
+}
+
+const hideSidenav = () => {
+    selectors.displaySmNav.classList.add('hide');
+    selectors.displaySmNav.dataset.hide = true;
+}

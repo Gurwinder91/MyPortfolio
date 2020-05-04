@@ -38,6 +38,9 @@ body {
     @include max-width-48 {
       padding: 0px 30px;
     }
+    @include between-40-60 {
+      padding: 0px 120px;
+    }
     min-height: 100vh;
     counter-reset: section-count;
     padding: 0px 150px;
@@ -45,6 +48,3 @@ body {
   }
 }
 
-// #root {
-//   display: none;
-// }

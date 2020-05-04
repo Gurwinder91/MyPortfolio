@@ -12,6 +12,7 @@ import '../assets/img/title-logo.svg'
         rootTemplate.remove();
 
         require('./event-manager');
+        require('./smooth-scroll');
     }, 2500);
 })();
 

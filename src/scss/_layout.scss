@@ -35,7 +35,7 @@ body {
 
 #content {
   main {
-    @include max-width-48 {
+    @include max-width-40 {
       padding: 0px 30px;
     }
     @include between-40-60 {

@@ -1,12 +1,12 @@
 #about {
   @extend %section;
 
-  @include max-width-48 {
+  @include max-width-40 {
     padding: 100px 0;
   }
 
   > div {
-    @include max-width-48 {
+    @include max-width-40 {
       flex-direction: column;
     }
 
@@ -16,7 +16,7 @@
   }
 
   .about-content {
-    @include max-width-48 {
+    @include max-width-40 {
       width: 100%;
     }
 
@@ -55,7 +55,7 @@
   }
 
   .my-image {
-    @include max-width-48 {
+    @include max-width-40 {
       margin: 60px auto 0;
       width: 40%;
     }
@@ -98,7 +98,7 @@
     }
   }
   .overlay {
-    @include max-width-48 {
+    @include max-width-40 {
       opacity: 0;
     }
 

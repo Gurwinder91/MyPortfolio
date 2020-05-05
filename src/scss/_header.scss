@@ -1,6 +1,6 @@
 .header {
 
-  @include max-width-48 {
+  @include max-width-40 {
     padding: 0 30px;
   }
 
@@ -47,7 +47,7 @@
     align-items: center;
     justify-content: center;
 
-    @include max-width-48 {
+    @include max-width-40 {
       display: none;
     }
   }
@@ -74,7 +74,7 @@
   }
 
   #menu-icon {
-    @include max-width-48 {
+    @include max-width-40 {
       display: flex;
     }
     cursor: pointer;

@@ -6,7 +6,7 @@
   justify-content: center;
   z-index: -1;
 
-  @include max-width-48 {
+  @include max-width-40 {
     padding: 150px 0 100px;
   }
 
@@ -23,7 +23,7 @@
   }
 
   h2 {
-    @include max-width-48 {
+    @include max-width-40 {
       font-size: 2.7em;
     }
     font-size: 4em;
@@ -33,7 +33,7 @@
   }
 
   h3 {
-    @include max-width-48 {
+    @include max-width-40 {
       font-size: 2.7em;
     }
     font-size: 3em;

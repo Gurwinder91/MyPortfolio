@@ -1,0 +1,52 @@
+#footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .social-network {
+        display: none;
+        @include max-width-60 {
+            display: block;
+        }
+        
+        ul {
+            display: flex;
+            font-size: 1.2em;
+
+            & > li {
+                margin-right: 10px;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+
+    .portfolio-git-info {
+        .link {
+            color: $dull-white;
+            font-size: 12px;
+            line-height: 1;
+        }
+
+        .star-fork-count {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            & > span {
+                display: inline-flex;
+                -webkit-box-align: center;
+                align-items: center;
+                margin: 0px 7px;
+            }
+            i {
+                display: inline-block;
+                height: 15px;
+                width: auto;
+                margin-right: 5px;
+            }
+        }
+    }
+}

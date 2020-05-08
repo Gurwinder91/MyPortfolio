@@ -35,11 +35,11 @@ body {
 
 #content {
   main {
-    @include max-width-40 {
+    @include max-width-48 {
       padding: 0px 30px;
     }
-    @include between-40-60 {
-      padding: 0px 120px;
+    @include between-48-60 {
+      padding: 0px 60px;
     }
     min-height: 100vh;
     counter-reset: section-count;

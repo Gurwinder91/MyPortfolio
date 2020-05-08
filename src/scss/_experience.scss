@@ -4,7 +4,7 @@
     @extend %section;
     max-width: 700px;
 
-    @include max-width-40 {
+    @include max-width-48 {
         padding: 100px 0;
     }
 
@@ -28,18 +28,29 @@
             width: 20%;
             font-family: $monospace-font-family;
             font-size: 13px;
-            @include max-width-40 {
+            @include max-width-48 {
                 width: 30%;
             }
         }
     }
     .js-tabs__content {
-        margin: 10px 0;
+        margin: 20px 0;
         .link {
             color: $lime;
+            font-family: $sans-serif-font-family;
+        }
+        h4{
+            line-height: 0;
+            font-size: 1.13em;
+            font-weight: 500;
+            margin-bottom: 5px;
         }
         h5 {
-            margin: 0;
+            font-weight: 500;
+            font-size: 0.8em;
+            color: $dull-white;
+            margin-bottom: 30px;
+            letter-spacing: 0.1em;
         }
         .experience-details {
             color: $dull-white;

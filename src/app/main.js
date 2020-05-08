@@ -14,6 +14,8 @@ import '../assets/img/title-logo.svg';
         require('./event-manager');
         require('./smooth-scroll');
         require('./tabs');
+        const footer = require('./footer');
+        footer.loadGitRepoInfo();
     }, 2500);
 })();
 

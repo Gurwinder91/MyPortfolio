@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gurwinder Singh | Full Stack Engineer</title>
+  <title>Gurwinder Singh | Full Stack Developer</title>
   <link rel="icon" type="image/svg+xml" href="assets/img/title-logo.svg" />
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
@@ -15,7 +15,7 @@
   <div id="root">
     <template id="root_template">
       <div id="root_content">
-        <header class="header">
+        <header id="header">
           <nav class="nav-section">
             <div class="logo">
               <a href="#" aria-label="logo">
@@ -24,10 +24,10 @@
             </div>
             <div class="nav-items">
               <ol class="nav-item-list">
-                <li><a class="link" href="#about">About</a></li>
-                <li><a class="link" href="#experience">Experience</a></li>
-                <li><a class="link" href="#projects">Work</a></li>
-                <li><a class="link" href="#contactMe">Contact</a></li>
+                <li><a class="link zoomin" href="#about">About</a></li>
+                <li><a class="link zoomin" href="#experience">Experience</a></li>
+                <li><a class="link zoomin" href="#projects">Projects</a></li>
+                <li><a class="link zoomin" href="#contactMe">Contact</a></li>
               </ol>
               <a class="btn" target="_blank" rel="nofollow noopener noreferrer" href="/my-resume.pdf">Resume</a>
             </div>
@@ -43,10 +43,11 @@
                 <ol class="nav-item-list">
                   <li><a class="link" aria-label="close-dialog" href="#about">About</a></li>
                   <li><a class="link" aria-label="close-dialog" href="#experience">Experience</a></li>
-                  <li><a class="link" aria-label="close-dialog" href="#projects">Work</a></li>
+                  <li><a class="link" aria-label="close-dialog" href="#projects">Projects</a></li>
                   <li><a class="link" aria-label="close-dialog" href="#contactMe">Contact</a></li>
                 </ol>
-                <a class="btn btn-x-lg" aria-label="close-dialog" target="_blank" rel="nofollow noopener noreferrer" href="/my-resume.pdf">Resume</a>
+                <a class="btn btn-x-lg" aria-label="close-dialog" target="_blank" rel="nofollow noopener noreferrer"
+                  href="/my-resume.pdf">Resume</a>
               </nav>
             </aside>
           </div>
@@ -54,26 +55,34 @@
         <div orientation="left" class="left-fix">
           <ul>
             <li>
-              <a class="link" href="https://github.com/Gurwinder91/" target="_blank" rel="nofollow noopener noreferrer">
+              <a class="link moveup" href="https://github.com/Gurwinder91/" target="_blank"
+                rel="nofollow noopener noreferrer">
                 <i class="fab fa-github"></i>
               </a>
             </li>
             <li>
-              <a class="link" href="https://www.linkedin.com/in/gurwinder-singh-somal-2277a4137/" target="_blank"
+              <a class="link moveup" href="https://www.linkedin.com/in/gurwinder-singh-somal-2277a4137/" target="_blank"
                 rel="nofollow noopener noreferrer">
                 <i class="fab fa-linkedin-in"></i>
               </a>
             </li>
             <li>
-              <a class="link" href="https://twitter.com/9gurwinder" target="_blank" rel="nofollow noopener noreferrer">
+              <a class="link moveup" href="https://twitter.com/9gurwinder" target="_blank"
+                rel="nofollow noopener noreferrer">
                 <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a class="link moveup" href="https://www.facebook.com/somal.zaildar/" target="_blank"
+                rel="nofollow noopener noreferrer">
+                <i class="fab fa-facebook"></i>
               </a>
             </li>
           </ul>
         </div>
         <div orientation="right" class="right-fix">
           <div>
-            <a class="link" href="mailTo:somal.gurwinder7@gmail.com">somal.gurwinder7@gmail.com</a>
+            <a class="link moveup" href="mailTo:somal.gurwinder7@gmail.com">somal.gurwinder7@gmail.com</a>
           </div>
         </div>
         <div id="content">
@@ -142,7 +151,7 @@
                   </ul>
                 </div>
                 <div class="my-image">
-                  <a href="/">
+                  <a href="javascript:void(0)">
                     <div class="overlay"></div>
                     <img src="assets/img/gurwinder.png" />
                   </a>
@@ -169,11 +178,12 @@
 
                     <ul class="js-tabs__content-container">
                       <li class="js-tabs__content active">
-                        <h5>ASP.NET Core Full Stack Engineer
-                          <a href="https://rdalabs.com/" target="_blank" rel="nofollow noopener noreferrer"
-                            class="link">@RDAlabs</a></h5>
+                        <h4>
+                          Full Stack Developer<a href="https://rdalabs.com/" target="_blank"
+                            rel="nofollow noopener noreferrer" class="link"> @ RDAlabs</a>
+                        </h4>
+                        <h5>Apiril, 2020 - Present</h5>
                         <div class="experience-details">
-                          <h6>Apiril, 2020 - Present</h6>
                           <ul>
                             <li class="list-item">Created Angular 7 architecture
                               using custom NPM libraries, Angular Material and Flex layout</li>
@@ -186,11 +196,11 @@
                         </div>
                       </li>
                       <li class="js-tabs__content">
-                        <h5>ASP.NET Core Full Stack Engineer
-                          <a href="https://www.taxback.com/" class="link" target="_blank"
-                            rel="nofollow noopener noreferrer">@Taxback</a></h5>
+                        <h4>Full Stack Developer<a href="https://www.taxback.com/" class="link" target="_blank"
+                            rel="nofollow noopener noreferrer"> @ Taxback</a>
+                        </h4>
+                        <h5>August, 2018 - Apiril, 2018</h5>
                         <div class="experience-details">
-                          <h6>August, 2018 - Apiril, 2018</h6>
                           <ul>
                             <li class="list-item">Created Angular 7 architecture
                               using custom NPM libraries, Angular Material and Flex layout</li>
@@ -203,11 +213,11 @@
                         </div>
                       </li>
                       <li class="js-tabs__content">
-                        <h5>ASP.NET Developer
-                          <a href="https://www.onebcg.com/" class="link" target="_blank"
-                            rel="nofollow noopener noreferrer">@ONE BCG</a></h5>
+                        <h4>ASP.NET Developer<a href="https://www.onebcg.com/" class="link" target="_blank"
+                            rel="nofollow noopener noreferrer"> @ ONE BCG</a>
+                        </h4>
+                        <h5> Feb, 2018 - August, 2018</h5>
                         <div class="experience-details">
-                          <h6> Feb, 2018 - August, 2018</h6>
                           <ul>
                             <li class="list-item">Created Angular 7 architecture
                               using custom NPM libraries, Angular Material and Flex layout</li>
@@ -220,11 +230,12 @@
                         </div>
                       </li>
                       <li class="js-tabs__content">
-                        <h5>ASP.NET Developer
+                        <h4>ASP.NET Developer
                           <a href="https://www.arielsoftwares.com/" class="link" target="_blank"
-                            rel="nofollow noopener noreferrer">@Ariel</a></h5>
+                            rel="nofollow noopener noreferrer"> @ Ariel</a>
+                        </h4>
+                        <h5>Jan, 2016 - Jan, 2018</h5>
                         <div class="experience-details">
-                          <h6>Jan, 2016 - Jan, 2018</h6>
                           <ul>
                             <li class="list-item">Created Angular 7 architecture
                               using custom NPM libraries, Angular Material and Flex layout</li>
@@ -242,10 +253,265 @@
               </div>
 
             </section>
+
+            <!--PROJECTS-->
+            <section id="projects">
+              <h3 class="section-heading">Some Usefuls I developed</h3>
+
+              <div class="feature-project">
+                <a href="/" class="project-pic">
+                  <div class="project-pic-wrapper">
+                    <div class="overlay"></div>
+                    <!-- <picture>
+                      <source media="(max-width: 30em)" srcset="assets/img/image1.jpg">
+                      <source media="(max-width: 40em)" srcset="assets/img/image2.jpg">
+                      <source media="(max-width: 50em)" srcset="assets/img/image3.jpg">
+                      <source media="(max-width: 60em)" srcset="assets/img/image4.jpg">
+                      <source media="(max-width: 70em)" srcset="assets/img/image5.jpg">
+                      <img src="assets/img/image1.jpg" alt="AssetCare" srcset="assets/img/image1.jpg 400w, 
+                          assets/img/image2.jpg 600w,  assets/img/image3.jpg 800w,
+                          assets/img/image4.jpg 1000w,  assets/img/image5.jpg 1200w">
+                    </picture> -->
+                    <img src="assets/img/image2.jpg" alt="AssetCare">
+                  </div>
+
+                </a>
+
+                <div class="feature-project-info">
+                  <h4>Featured Projects</h4>
+                  <h5>AssetCare</h5>
+                  <div class="description">
+                    <p>
+                      A nicer look at your GitHub profile and repo stats. Includes data visualizations of your top
+                      languages, starred repositories, and sort through your top repos by number of stars, forks, and
+                      size.
+                    </p>
+                  </div>
+                  <ul class="tech-list">
+                    <li>Reactjs</li>
+                    <li>Firebase</li>
+                  </ul>
+                  <div class="links">
+                    <a class="link moveup" href="https://github.com/Gurwinder91/" target="_blank"
+                      rel="nofollow noopener noreferrer">
+                      <i class="fab fa-github"></i>
+                    </a>
+                    <a class="link moveup" href="https://github.com/Gurwinder91/" target="_blank"
+                      rel="nofollow noopener noreferrer">
+                      <i class="fas fa-external-link-alt"></i>
+                    </a>
+                  </div>
+                </div>
+
+              </div>
+
+            </section>
+
+            <section id="other-projects">
+              <h4>Other Noteworthy Projects</h4>
+              <div class="project-cards">
+                <div class="project-card moveup">
+                  <div>
+                    <div class="links">
+                      <i class="far fa-folder-open moveup"></i>
+                      <div>
+                        <a class="link moveup" href="https://github.com/Gurwinder91/" target="_blank"
+                          rel="nofollow noopener noreferrer">
+                          <i class="fab fa-github"></i>
+                        </a>
+                        <a class="link moveup" href="https://github.com/Gurwinder91/" target="_blank"
+                          rel="nofollow noopener noreferrer">
+                          <i class="fas fa-external-link-alt"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <h5>Time to have fun</h5>
+                    <p>A single page web app for helping me choose where to travel, built with Next.js, Firebase, and
+                      Tailwind CSS</p>
+                  </div>
+                  <ul class="tech-list">
+                    <li>Reactjs</li>
+                    <li>Firebase</li>
+                  </ul>
+                </div>
+
+                <div class="project-card moveup">
+                  <div>
+                    <div class="links">
+                      <i class="far fa-folder-open moveup"></i>
+                      <div>
+                        <a class="link moveup" href="https://github.com/Gurwinder91/" target="_blank"
+                          rel="nofollow noopener noreferrer">
+                          <i class="fab fa-github"></i>
+                        </a>
+                        <a class="link moveup" href="https://github.com/Gurwinder91/" target="_blank"
+                          rel="nofollow noopener noreferrer">
+                          <i class="fas fa-external-link-alt"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <h5>Time to have fun</h5>
+                    <p>A single page web app for helping me choose where to travel, built with Next.js, Firebase, and
+                      Tailwind CSS</p>
+                  </div>
+                  <ul class="tech-list">
+                    <li>Reactjs</li>
+                    <li>Firebase</li>
+                  </ul>
+                </div>
+
+                <div class="project-card moveup">
+                  <div>
+                    <div class="links">
+                      <i class="far fa-folder-open moveup"></i>
+                      <div>
+                        <a class="link moveup" href="https://github.com/Gurwinder91/" target="_blank"
+                          rel="nofollow noopener noreferrer">
+                          <i class="fab fa-github"></i>
+                        </a>
+                        <a class="link moveup" href="https://github.com/Gurwinder91/" target="_blank"
+                          rel="nofollow noopener noreferrer">
+                          <i class="fas fa-external-link-alt"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <h5>Time to have fun</h5>
+                    <p>A single page web app for helping me choose where to travel, built with Next.js, Firebase, and
+                      Tailwind CSS</p>
+                  </div>
+                  <ul class="tech-list">
+                    <li>Reactjs</li>
+                    <li>Firebase</li>
+                  </ul>
+                </div>
+
+                <div class="project-card moveup">
+                  <div>
+                    <div class="links">
+                      <i class="far fa-folder-open moveup"></i>
+                      <div>
+                        <a class="link moveup" href="https://github.com/Gurwinder91/" target="_blank"
+                          rel="nofollow noopener noreferrer">
+                          <i class="fab fa-github"></i>
+                        </a>
+                        <a class="link moveup" href="https://github.com/Gurwinder91/" target="_blank"
+                          rel="nofollow noopener noreferrer">
+                          <i class="fas fa-external-link-alt"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <h5>Time to have fun</h5>
+                    <p>A single page web app for helping me choose where to travel, built with Next.js, Firebase, and
+                      Tailwind CSS</p>
+                  </div>
+                  <ul class="tech-list">
+                    <li>Reactjs</li>
+                    <li>Firebase</li>
+                  </ul>
+                </div>
+
+                <div class="project-card moveup">
+                  <div>
+                    <div class="links">
+                      <i class="far fa-folder-open moveup"></i>
+                      <div>
+                        <a class="link moveup" href="https://github.com/Gurwinder91/" target="_blank"
+                          rel="nofollow noopener noreferrer">
+                          <i class="fab fa-github"></i>
+                        </a>
+                        <a class="link moveup" href="https://github.com/Gurwinder91/" target="_blank"
+                          rel="nofollow noopener noreferrer">
+                          <i class="fas fa-external-link-alt"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <h5>Time to have fun</h5>
+                    <p>A single page web app for helping me choose where to travel, built with Next.js, Firebase, and
+                      Tailwind CSS</p>
+                  </div>
+                  <ul class="tech-list">
+                    <li>Reactjs</li>
+                    <li>Firebase</li>
+                  </ul>
+                </div>
+
+                <div class="project-card moveup">
+                  <div>
+                    <div class="links">
+                      <i class="far fa-folder-open moveup"></i>
+                      <div>
+                        <a class="link moveup" href="https://github.com/Gurwinder91/" target="_blank"
+                          rel="nofollow noopener noreferrer">
+                          <i class="fab fa-github"></i>
+                        </a>
+                        <a class="link moveup" href="https://github.com/Gurwinder91/" target="_blank"
+                          rel="nofollow noopener noreferrer">
+                          <i class="fas fa-external-link-alt"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <h5>Time to have fun</h5>
+                    <p>A single page web app for helping me choose where to travel, built with Next.js, Firebase, and
+                      Tailwind CSS</p>
+                  </div>
+                  <ul class="tech-list">
+                    <li>Reactjs</li>
+                    <li>Firebase</li>
+                  </ul>
+                </div>
+              </div>
+            </section>
           </main>
         </div>
 
-        <footer></footer>
+        <footer id="footer">
+          <div class="social-network">
+            <ul>
+              <li>
+                <a class="link" href="https://github.com/Gurwinder91/" target="_blank"
+                  rel="nofollow noopener noreferrer">
+                  <i class="fab fa-github "></i>
+                </a>
+              </li>
+              <li>
+                <a class="link" href="https://www.linkedin.com/in/gurwinder-singh-somal-2277a4137/" target="_blank"
+                  rel="nofollow noopener noreferrer">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+              <li>
+                <a class="link" href="https://twitter.com/9gurwinder" target="_blank"
+                  rel="nofollow noopener noreferrer">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a class="link" href="https://www.facebook.com/somal.zaildar/" target="_blank"
+                  rel="nofollow noopener noreferrer">
+                  <i class="fab fa-facebook"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="portfolio-git-info">
+            <a href="https://github.com/Gurwinder91/MyPortfolio" class="link" rel="nofollow noopener noreferrer"
+              target="_blank">
+              <div>
+                Designed & Built by Gurwinder Singh
+              </div>
+              <div class="star-fork-count">
+                <span>
+                  <i class="fas fa-star"></i>
+                  <span id="gitStars"></span>
+                </span>
+                <span>
+                  <i class="fas fa-code-branch"></i>
+                  <span id="gitFork"></span>
+                </span>
+              </div>
+            </a>
+          </div>
+        </footer>
       </div>
     </template>
   </div>

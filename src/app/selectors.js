@@ -4,7 +4,9 @@ const selector = {
     displaySmNav: document.querySelector('#display-sm-nav'),
     loader: document.querySelector('#loader'),
     rootEl: document.querySelector('#root'),
-    sideSmNavItem: document.querySelectorAll("[aria-label='close-dialog']")
+    sideSmNavItem: document.querySelectorAll("[aria-label='close-dialog']"),
+    gitFork: document.querySelector('#gitFork'),
+    gitStars: document.querySelector('#gitStars'),
 }
 
 export default selector;

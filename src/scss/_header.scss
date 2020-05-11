@@ -60,15 +60,22 @@
     counter-reset: item;
 
     li {
+      @include max-width-48{
+        font-size: 1em;
+      }
       margin: 0 10px;
-      font-size: 13px;
+      font-size: 0.8em;
 
       &::before {
+        @include max-width-48{
+          font-size: 1em;
+        }
+        
         counter-increment: item;
         content: "0" counter(item) ".";
         text-align: right;
         color: $lime;
-        font-size: 13px;
+        font-size: 0.8em;
       }
     }
   }

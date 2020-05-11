@@ -27,47 +27,19 @@
       display: grid;
       grid-template-columns: repeat(2, minmax(120px, 220px));
     }
-
-    .link {
-      color: $lime;
-      padding: 0;
-      position: relative;
-
-      &::after {
-        content: "";
-        background-color: $lime;
-        height: 1px;
-        display: block;
-        position: absolute;
-        bottom: 3px;
-        width: 0;
-        opacity: 0.8; 
-        transition: width 0.25s linear;
-      }
-      &:hover {
-        &::after {
-          width: 100%;
-          left: 0;
-          right: auto;
-        }
-      }
-    }
   }
-
+  
   .my-image {
     @include max-width-48 {
       margin: 60px auto 0;
-      width: 40%;
+      width: 70%;
     }
 
     position: relative;
     width: 30%;
 
     a {
-      &:hover .overlay {
-        opacity: 0;
-      }
-
+  
       &:hover::after {
         top: 10px;
         left: 10px;

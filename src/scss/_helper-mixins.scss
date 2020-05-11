@@ -1,7 +1,13 @@
 
 
-@mixin max-width-40 {
-    @media only screen and (max-width: 40em) {
+@mixin max-width-24 {
+    @media only screen and (max-width: 24em) {
+        @content;
+    }
+}
+
+@mixin max-width-30 {
+    @media only screen and (max-width: 30em) {
         @content;
     }
 }

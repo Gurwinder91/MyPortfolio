@@ -1,112 +1,61 @@
 #projects {
-    $description-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -15px;
-    $img-background: rgb(10, 25, 47);
-
     @extend %section;
 
-    .feature-project {
+    h4 {
+        display: flex;
+        justify-content: center;
+        margin: 10px 0px 40px;
+        font-size: 1.5em;
+    }
+    .project-cards {
         @include max-width-48 {
-            height: 100%;
-            width: auto;
+            padding: 0 10px;
         }
         display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        align-items: center;
-        position: relative;
-        overflow: hidden;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 20px;
+        margin-top: 50px;
     }
-
-    .project-pic-wrapper {
-        .overlay {
-            @include max-width-48 {
-                opacity: 0.7;
-                background-color: $img-background;
-            }
-
-            &:hover {
-                opacity: 0;
-            }
-        }
-
-        width: 100%;
-        max-width: 100%;
-        vertical-align: middle;
-        position: relative;
-        border-radius: 3px;
-        img {
-            width: 100%;
-            max-width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: center center;
-        }
-    }
-    .project-pic {
-        @include max-width-48 {
-            grid-column: 1/ -1;
-        }
-        position: relative;
-        grid-column: 1/8;
-        grid-row: 1;
-    }
-
-    .feature-project-info {
-        @include max-width-48 {
-            position: absolute;
-            padding: 30px 25px 20px;
-            text-align: right;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            grid-column: 1/ -1;
-        }
-
+    .project-card {
+        box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -15px;
+        background-color: $dark-blue;
+        padding: 2rem 1.75rem;
+        border-radius: 5px;
         display: flex;
-        align-items: flex-end;
         flex-direction: column;
-        grid-column: 7/-1;
-        grid-row: 1;
+        justify-content: space-between;
 
-        h4 {
-            color: $lime;
-            font-size: 0.9em;
-            font-weight: normal;
-            margin-top: 10px;
-            font-family: $monospace-font-family;
+        .links {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
         }
+
         h5 {
-            font-size: 1.8em;
             font-weight: 500;
-            margin: 0px 0px 20px;
+            font-size: 1.4em;
         }
 
-        .description {
-            @include max-width-48 {
-                box-shadow: none;
-                background-color: transparent;
-                padding: 20px 0px;
-            }
-
-            box-shadow: $description-shadow;
-            position: relative;
-            z-index: 2;
-            background-color: $dark-blue;
-            color: $text-color;
-            padding: 25px;
-            border-radius: 3px;
-            transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
-
-            p {
-                @include max-width-48 {
-                    font-size: 1.1em;
-                }
-                margin: 0;
-                font-size: 0.95em;
-                word-spacing: normal;
-                letter-spacing: normal;
-            }
+        p {
+            word-spacing: normal;
+            letter-spacing: normal;
+            color: $dull-white;
         }
 
+        .fa-folder-open {
+            color: $lime;
+            font-size: 1.6em;
+        }
+
+        .tech-list {
+            @include max-width-24 {
+                font-size: 0.75em;
+            }
+            & > li {
+                margin-left: 0;
+                margin-right: 20px;
+            }
+        }
     }
 }

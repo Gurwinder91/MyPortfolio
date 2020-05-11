@@ -16,12 +16,11 @@
   @extend %link;
 }
 
-
 .moveup {
   transition: transform 0.2s;
 
   &:hover {
-    transform: translateY(-3px);
+    transform: translateY(-5px);
   }
 }
 
@@ -38,7 +37,7 @@
   margin-bottom: 10px;
   padding-left: 20px;
   font-family: $monospace-font-family;
-  font-size: 1.1em;
+  font-size: 0.9em;
   font-weight: 500;
 
   &::before {
@@ -51,10 +50,6 @@
 }
 
 .overlay {
-  @include max-width-48 {
-    opacity: 0;
-  }
-
   position: absolute;
   top: 0;
   bottom: 0;
@@ -63,17 +58,21 @@
   opacity: 0.4;
   transition: 0.5s ease;
   background-color: $lime;
+
+  &:hover{
+    opacity: 0;
+  }
 }
 
 .section-heading {
   @include max-width-48 {
-    font-size: 1.2em;
+    font-size: 1.4em;
   }
   display: flex;
   align-items: flex-end;
   justify-content: flex-start;
   margin: 10px 0px 40px;
-  font-size: 1.5em;
+  font-size: 1.7em;
 
   &::before {
     counter-increment: section-count;
@@ -102,12 +101,45 @@
 
 .tech-list {
   display: flex;
+  flex-wrap: wrap;
   margin: 25px 0 10px;
   font-size: 0.85em;
   font-family: $monospace-font-family;
   color: $text-color;
 
   & > li {
-      margin-left: 20px;
+    margin-left: 20px;
   }
 }
+
+.overall-experience {
+  display: inline-block;
+  color: $lime;
+}
+
+.underline {
+  color: $lime;
+  padding: 0;
+  position: relative;
+  font-family: $sans-serif-font-family;
+
+  &::after {
+    content: "";
+    background-color: $lime;
+    height: 1px;
+    display: block;
+    position: absolute;
+    bottom: 1px;
+    width: 0;
+    opacity: 0.8; 
+    transition: width 0.25s linear;
+  }
+  &:hover {
+    &::after {
+      width: 100%;
+      left: 0;
+      right: auto;
+    }
+  }
+}
+

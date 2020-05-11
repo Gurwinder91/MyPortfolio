@@ -6,7 +6,7 @@
 
     .social-network {
         display: none;
-        @include max-width-60 {
+        @include max-width-48 {
             display: block;
         }
         

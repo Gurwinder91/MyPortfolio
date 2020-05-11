@@ -5,32 +5,23 @@ ol {
   list-style: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 600;
-  margin: 0px 0px 10px;
+p {
+  font-weight: 500;
+  font-size: 1.062em;
+  @include max-width-24 {
+    font-weight: normal;
+  }
 }
 
-p {
-  margin: 0px 0px 15px;
-  word-spacing: 2px;
-  letter-spacing: 1px;
-  line-height: 1.4;
-  font-size: 1.1em;
-  font-weight: 500;
+.no-redirect {
+  cursor: not-allowed;
 }
 
 * {
   outline: none;
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
-::selection{
+::selection {
   background-color: $selectionColor;
 }

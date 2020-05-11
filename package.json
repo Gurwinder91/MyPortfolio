@@ -28,6 +28,7 @@
   },
   "dependencies": {
     "js-tabs": "^1.0.1",
+    "moment": "^2.25.3",
     "smooth-scroll": "^16.1.3"
   }
 }

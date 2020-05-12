@@ -23,6 +23,10 @@
         position: relative;        
 
         .overlay{
+            @include max-width-30 {
+                opacity: 0.88;
+            }
+            
             background-color: $black;
             opacity: 0.80;
             border-radius: 3px;

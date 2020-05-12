@@ -8,6 +8,11 @@
         padding: 100px 0;
     }
 
+    .over-all-exp{
+        font-weight: 500;
+        font-size: 1em;
+        color: $dull-white;
+    }
     .md{
         display: flex;
         @include max-width-48 {
@@ -46,9 +51,8 @@
             margin-bottom: 5px;
         }
         h5 {
-            font-weight: 500;
+            @extend .over-all-exp;
             font-size: 0.8em;
-            color: $dull-white;
             margin-bottom: 30px;
             letter-spacing: 0.1em;
         }

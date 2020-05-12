@@ -18,16 +18,16 @@
         <header id="header">
           <nav class="nav-section">
             <div class="logo">
-              <a href="#" aria-label="logo">
+              <a href="#" aria-label="logo" data-aos="fade-down" data-aos-delay="400">
                 <img src="assets/img/logo.svg" />
               </a>
             </div>
             <div class="nav-items">
               <ol class="nav-item-list">
-                <li><a class="link zoomin" href="#about">About</a></li>
-                <li><a class="link zoomin" href="#experience">Experience</a></li>
-                <li><a class="link zoomin" href="#projects">Projects</a></li>
-                <li><a class="link zoomin" href="#labs">Labs</a></li>
+                <li data-aos="fade-down"><a class="link zoomin" href="#about" >About</a></li>
+                <li data-aos="fade-down" data-aos-delay="50"><a class="link zoomin" href="#experience">Experience</a></li>
+                <li data-aos="fade-down" data-aos-delay="150"><a class="link zoomin" href="#projects">Projects</a></li>
+                <li data-aos="fade-down" data-aos-delay="200"><a class="link zoomin" href="#labs">Labs</a></li>
               </ol>
               <a class="btn" target="_blank" rel="nofollow noopener noreferrer" href="/my-resume.pdf">Resume</a>
             </div>
@@ -52,7 +52,7 @@
             </aside>
           </div>
         </header>
-        <div orientation="left" class="left-fix">
+        <div orientation="left" data-aos="zoom-in" data-aos-delay="1000" class="left-fix">
           <ul>
             <li>
               <a class="link moveup" title="Github" href="https://github.com/Gurwinder91/" target="_blank"
@@ -81,7 +81,7 @@
             </li>
           </ul>
         </div>
-        <div orientation="right" class="right-fix">
+        <div orientation="right" data-aos="zoom-in" data-aos-delay="1000" class="right-fix">
           <div>
             <a class="link moveup" title="Get In Touch"
               href="mailTo:somal.gurwinder7@gmail.com">somal.gurwinder7@gmail.com</a>
@@ -91,45 +91,45 @@
           <main>
             <!--INTRO -->
             <section id="intro">
-              <h4>
+              <h4 data-aos="fade-up" data-aos-delay="800">
                 Hi, my name is
               </h4>
-              <h1>
+              <h1 data-aos="fade-up" data-aos-delay="850">
                 Gurwinder Singh Somal.
               </h1>
-              <h2>
+              <h2 data-aos="fade-up" data-aos-delay="900">
                 I build things for web.
               </h2>
-              <div>
+              <div data-aos="fade-up" data-aos-delay="950">
                 <p>
                   An experienced Software Engineer working primarily in ASP.NET
-                  core Web APIs, Angular and AWS from last <span class="overall-experience"></span>. I am passionate
+                  core Web APIs, Angular and AWS from last. I am passionate
                   about my work
                   and always keen to learn from others.
                 </p>
               </div>
 
-              <a class="btn btn-lg" href="mailto:somal.gurwinder7@gmail.com">
+              <a class="btn btn-lg" href="mailto:somal.gurwinder7@gmail.com" data-aos="fade-up" data-aos-delay="1000">
                 Get In Touch
               </a>
             </section>
 
             <!--ABOUT -->
             <section id="about">
-              <h3 class="section-heading">About Me</h3>
+              <h3 class="section-heading" data-aos="fade-up">About Me</h3>
               <div>
                 <div class="about-content">
-                  <p>
+                  <p data-aos="fade-up">
                     Hello! I'm Gurwinder Singh, a Full Stack Developer based in Bengaluru, IN
                   </p>
-                  <p>
+                  <p data-aos="fade-up">
                     I enjoys building things that live on the internet. I
                     develop exceptional websites and web apps that provide
                     intuitive, pixel-perfect user interfaces with efficient and
                     modern backends.
                   </p>
 
-                  <p>
+                  <p data-aos="fade-up">
                     Shortly after graduating from
                     <a class="link underline" href="http://www.ptu.ac.in/" target="_blank"
                       rel="nofollow noopener noreferrer">Punjab Technical University</a>, I joined the engineering team
@@ -139,13 +139,15 @@
                     where I work on a wide variety of interesting and meaningful
                     projects on a daily basis.
                   </p>
-                  <p>
+                  <p data-aos="fade-up">
                     Here are a few technologies I've been working with recently:
                   </p>
-                  <ul>
+                  <ul data-aos="fade-up">
                     <li class="list-item">Asp.net Core</li>
                     <li class="list-item">Docker</li>
                     <li class="list-item">AWS</li>
+                    <li class="list-item">Microservices</li>
+                    <li class="list-item">MediatR/CQRS</li>
                     <li class="list-item">Angular</li>
                     <li class="list-item">Reactjs</li>
                     <li class="list-item">Javascript</li>
@@ -155,7 +157,7 @@
                     <li class="list-item">HTML/CSS</li>
                   </ul>
                 </div>
-                <div class="my-image">
+                <div class="my-image" data-aos="fade-up">
                   <a href="javascript:void(0)">
                     <div class="overlay"></div>
                     <img src="assets/img/gurwinder.png" />
@@ -166,10 +168,11 @@
 
             <!--EXPERIENCE -->
             <section id="experience">
-              <h3 class="section-heading md">Professional Experience</h3>
-              <h3 class="section-heading sm">Experience</span></h3>
+              <h3 class="section-heading md" data-aos="fade-up">Professional Experience</h3>
+              <h3 class="section-heading sm" data-aos="fade-up">Experience </h3>
+              <h5 class="over-all-exp" data-aos="fade-up">Over All Experience: <span class="overall-experience"></span></h5>
               <div>
-                <div class="experience-content">
+                <div class="experience-content" data-aos="fade-up">
                   <div id="my-js-tabs">
                     <nav class="js-tabs__nav">
                       <ul class="js-tabs__tabs-container">
@@ -282,14 +285,16 @@
             </section>
 
             <!--PROJECTS-->
-            <section id="projects">
-              <h3 class="section-heading">Project I've developed</h3>
+            <section id="projects" >
+              <h3 class="section-heading" data-aos="fade-up">Project I've developed</h3>
 
-              <div class="feature-project">
-                <a href="/" class="project-pic">
+              <div class="feature-project" data-aos="fade-up">
+                <a href="https://dairy-management-system-9191.firebaseapp.com/" class="project-pic"  target="_blank"
+                rel="nofollow noopener noreferrer">
                   <div class="project-pic-wrapper">
                     <div class="overlay"></div>
                     <picture>
+                      <source media="(max-width: 30em)" srcset="assets/img/vertical3.png">
                       <source media="(max-width: 40em)" srcset="assets/img/vertical.png">
                       <source media="(max-width: 55em)" srcset="assets/img/vertical2.png"> 
                       <source media="(max-width: 70em)" srcset="assets/img/horizontal.png">
@@ -321,7 +326,7 @@
                       rel="nofollow noopener noreferrer">
                       <i class="fab fa-github"></i>
                     </a>
-                    <a class="link moveup" href="https://github.com/Gurwinder91/" target="_blank"
+                    <a class="link moveup" href="https://dairy-management-system-9191.firebaseapp.com/" target="_blank"
                       rel="nofollow noopener noreferrer">
                       <i class="fas fa-external-link-alt"></i>
                     </a>
@@ -332,10 +337,11 @@
 
             </section>
 
+            <!--LABS-->
             <section id="labs">
-              <h4>Some Labs I did</h4>
+              <h3 class="section-heading" data-aos="fade-up">Some Labs I did</h3>
               <div class="project-cards">
-                <div class="project-card moveup">
+                <div class="project-card moveup" data-aos="fade-up">
                   <div>
                     <div class="links">
                       <i class="far fa-folder-open moveup"></i>
@@ -351,18 +357,18 @@
                       </div>
                     </div>
                     <h2>ASP.NET Core Architecture</h2>
-                    <p>Asp.net core clean Architecture template build using Mediatr, CQRS and Postgress.
+                    <p>Asp.net core clean Architecture template build using MediatR, CQRS and Postgress.
                       Each component is unit testable</p>
                   </div>
                   <ul class="tech-list">
                     <li>ASP.NET Core API</li>
-                    <li>Mediatr</li>
+                    <li>MediatR</li>
                     <li>CQRS</li>
                     <li>Postgress</li>
                   </ul>
                 </div>
 
-                <div class="project-card moveup">
+                <div class="project-card moveup" data-aos="fade-up">
                   <div>
                     <div class="links">
                       <i class="far fa-folder-open moveup"></i>
@@ -388,7 +394,7 @@
                   </ul>
                 </div>
 
-                <div class="project-card moveup">
+                <div class="project-card moveup" data-aos="fade-up">
                   <div>
                     <div class="links">
                       <i class="far fa-folder-open moveup"></i>
@@ -413,7 +419,7 @@
                   </ul>
                 </div>
 
-                <div class="project-card moveup">
+                <div class="project-card moveup" data-aos="fade-up">
                   <div>
                     <div class="links">
                       <i class="far fa-folder-open moveup"></i>
@@ -437,7 +443,7 @@
                     <li>CSS</li>
                   </ul>
                 </div>
-                <div class="project-card moveup">
+                <div class="project-card moveup" data-aos="fade-up">
                   <div>
                     <div class="links">
                       <i class="far fa-folder-open moveup"></i>

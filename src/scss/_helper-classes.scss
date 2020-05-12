@@ -59,20 +59,21 @@
   transition: 0.5s ease;
   background-color: $lime;
 
-  &:hover{
-    opacity: 0;
+  &:hover {
+    opacity: 0 !important;
   }
 }
 
 .section-heading {
   @include max-width-48 {
-    font-size: 1.4em;
+    font-size: 1.2em;
   }
   display: flex;
   align-items: flex-end;
   justify-content: flex-start;
   margin: 10px 0px 40px;
-  font-size: 1.7em;
+  font-size: 1.5em;
+  width: 100%;
 
   &::before {
     counter-increment: section-count;
@@ -81,16 +82,21 @@
     font-family: $monospace-font-family;
     font-weight: normal;
     color: $lime;
-    font-size: 20px;
+    font-size: 70%;
     text-align: end;
   }
 
   &::after {
+    @include max-width-48{
+      margin-left: 10px;
+    max-width: 100%;
+    }
     content: "";
     height: 2px;
     background-color: $light-white;
     margin-left: 20px;
-    width: 30%;
+    max-width: 30%;
+    flex: 1;
     align-self: center;
   }
 }
@@ -114,6 +120,8 @@
 
 .overall-experience {
   display: inline-block;
+  font-size: 1em;
+  font-weight: normal;
   color: $lime;
 }
 
@@ -131,7 +139,7 @@
     position: absolute;
     bottom: 1px;
     width: 0;
-    opacity: 0.8; 
+    opacity: 0.8;
     transition: width 0.25s linear;
   }
   &:hover {
@@ -142,4 +150,3 @@
     }
   }
 }
-

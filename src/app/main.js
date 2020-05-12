@@ -26,6 +26,10 @@ import '../assets/img/title-logo.svg';
         require('./event-manager');
         require('./smooth-scroll');
         require('./tabs');
+        
+        const AOS = require('aos');
+        AOS.init();
+
         const footer = require('./footer');
         footer.loadGitRepoInfo();
     }, 2500);

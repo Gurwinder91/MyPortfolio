@@ -25,11 +25,11 @@
       margin: 0px auto;
     }
   }
-
 }
 
 %hide {
-  display: none;
+  transform: translateX(100vw);
+  visibility: hidden;
 }
 
 %btn {

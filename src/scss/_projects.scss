@@ -86,7 +86,7 @@
             @include max-width-30 {
                 box-shadow: none;
                 background-color: transparent;
-                padding: 20px 0px;
+                padding:0;
             }
 
             box-shadow: $description-shadow;

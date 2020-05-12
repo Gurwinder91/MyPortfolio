@@ -20,7 +20,7 @@ var firebaseConfig = {
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 const analytics = firebase.analytics();
-analytics.logEvent('page_view', { test: 'hello'});
+analytics.logEvent('page_view');
 
 (function () {
     const calculateExperience = () => {

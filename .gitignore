@@ -8,5 +8,6 @@ package-lock.json
 #published files
 dist/
 
-#firebase logs
+#firebase
+.firebase/
 firebase-debug.log

@@ -9,6 +9,8 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 
 <body>
@@ -24,8 +26,9 @@
             </div>
             <div class="nav-items">
               <ol class="nav-item-list">
-                <li data-aos="fade-down"><a class="link zoomin" href="#about" >About</a></li>
-                <li data-aos="fade-down" data-aos-delay="50"><a class="link zoomin" href="#experience">Experience</a></li>
+                <li data-aos="fade-down"><a class="link zoomin" href="#about">About</a></li>
+                <li data-aos="fade-down" data-aos-delay="50"><a class="link zoomin" href="#experience">Experience</a>
+                </li>
                 <li data-aos="fade-down" data-aos-delay="150"><a class="link zoomin" href="#projects">Projects</a></li>
                 <li data-aos="fade-down" data-aos-delay="200"><a class="link zoomin" href="#labs">Labs</a></li>
               </ol>
@@ -109,7 +112,7 @@
                 </p>
               </div>
 
-              <a class="btn btn-lg" href="mailto:somal.gurwinder7@gmail.com" data-aos="fade-up" data-aos-delay="1000">
+              <a class="btn btn-lg" href="mailto:somal.gurwinder7@gmail.com" data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-delay="1000" data-aos-once="true">
                 Get In Touch
               </a>
             </section>
@@ -170,7 +173,8 @@
             <section id="experience">
               <h3 class="section-heading md" data-aos="fade-up">Professional Experience</h3>
               <h3 class="section-heading sm" data-aos="fade-up">Experience </h3>
-              <h5 class="over-all-exp" data-aos="fade-up">Over All Experience: <span class="overall-experience"></span></h5>
+              <h5 class="over-all-exp" data-aos="fade-up">Over All Experience: <span class="overall-experience"></span>
+              </h5>
               <div>
                 <div class="experience-content" data-aos="fade-up">
                   <div id="my-js-tabs">
@@ -228,7 +232,8 @@
                               Material and Flex layout.</li>
                             <li class="list-item">Developed Microservices based architecture in backend with SQS and
                               lambda as a message broker.</li>
-                            <li class="list-item">Created Docker images for the backend services and angular application.
+                            <li class="list-item">Created Docker images for the backend services and angular
+                              application.
                             </li>
                             <li class="list-item"> Setup AWS ECS Fargate, S3, SQS and lambda for Dev, QA and Staging
                               environments to deploy application using VSTS CI/CD release pipeline.</li>
@@ -285,20 +290,20 @@
             </section>
 
             <!--PROJECTS-->
-            <section id="projects" >
+            <section id="projects">
               <h3 class="section-heading" data-aos="fade-up">Project I've developed</h3>
 
               <div class="feature-project" data-aos="fade-up">
-                <a href="https://dairy-management-system-9191.firebaseapp.com/" class="project-pic"  target="_blank"
-                rel="nofollow noopener noreferrer">
+                <a href="https://dairy-management-system-9191.firebaseapp.com/" class="project-pic" target="_blank"
+                  rel="nofollow noopener noreferrer">
                   <div class="project-pic-wrapper">
                     <div class="overlay"></div>
                     <picture>
                       <source media="(max-width: 30em)" srcset="assets/img/vertical3.png">
                       <source media="(max-width: 40em)" srcset="assets/img/vertical.png">
-                      <source media="(max-width: 55em)" srcset="assets/img/vertical2.png"> 
+                      <source media="(max-width: 55em)" srcset="assets/img/vertical2.png">
                       <source media="(max-width: 70em)" srcset="assets/img/horizontal.png">
-                        <source media="(min-width: 70em)" srcset="assets/img/horizontal2.png">
+                      <source media="(min-width: 70em)" srcset="assets/img/horizontal2.png">
                       <img src="assets/img/horizontal.png" alt="DiaryManager">
                     </picture>
                   </div>
@@ -435,7 +440,8 @@
                       </div>
                     </div>
                     <h2>Resume HTML Template</h2>
-                    <p>A Resume template built using html and css. While taking prints, template can be saved as PDF.</p>
+                    <p>A Resume template built using html and css. While taking prints, template can be saved as PDF.
+                    </p>
                   </div>
                   <ul class="tech-list">
                     <li>HTML5</li>
@@ -459,7 +465,8 @@
                       </div>
                     </div>
                     <h2>Auto Mapper Clone</h2>
-                    <p>A Clone of Auto Mapper to map source object or list to destination object or list respectively.</p>
+                    <p>A Clone of Auto Mapper to map source object or list to destination object or list respectively.
+                    </p>
                   </div>
                   <ul class="tech-list">
                     <li>C# 7</li>

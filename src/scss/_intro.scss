@@ -7,7 +7,7 @@
   justify-content: center;
 
   @include max-width-48 {
-    padding: 150px 0 100px;
+    padding: 130px 0 100px;
   }
 
   flex-direction: column;
@@ -52,6 +52,9 @@
 
 
   a {
+    @include max-width-24 {
+      margin-top: 30px;
+    }
     margin-top: 50px;
     margin-left: 0;
     text-transform: none;

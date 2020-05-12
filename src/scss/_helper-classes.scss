@@ -20,7 +20,7 @@
   transition: transform 0.2s;
 
   &:hover {
-    transform: translateY(-5px);
+    transform: translateY(-5px) !important;
   }
 }
 
@@ -28,7 +28,7 @@
   transition: font-size 0.2s;
 
   &:hover {
-    font-size: 1.1em;
+    font-size: 1.1em !important;
   }
 }
 
@@ -87,9 +87,9 @@
   }
 
   &::after {
-    @include max-width-48{
+    @include max-width-48 {
       margin-left: 10px;
-    max-width: 100%;
+      max-width: 100%;
     }
     content: "";
     height: 2px;
@@ -100,6 +100,7 @@
     align-self: center;
   }
 }
+
 
 .links {
   font-size: 1.5em;
@@ -149,4 +150,8 @@
       right: auto;
     }
   }
+}
+
+.shadow {
+  box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
 }

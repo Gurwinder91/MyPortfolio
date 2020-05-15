@@ -27,7 +27,7 @@
                 opacity: 0.88;
             }
             
-            background-color: $black;
+            background-color: $primary;
             opacity: 0.80;
             border-radius: 3px;
         }
@@ -70,7 +70,7 @@
         grid-row: 1;
 
         h4 {
-            color: $lime;
+            color: $secendary;
             font-size: 0.9em;
             font-weight: normal;
             margin-top: 10px;
@@ -92,7 +92,7 @@
             box-shadow: $description-shadow;
             position: relative;
             z-index: 2;
-            background-color: $dark-blue;
+            background-color: $dark-primary;
             color: $text-color;
             padding: 25px;
             border-radius: 3px;

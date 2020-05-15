@@ -7,9 +7,11 @@ const styleHeader = (obj) => {
     }
 }
 
-const scrollHandler = () => {
+export const scrollHandler = () => {
+    
     let prevScroll = window.pageYOffset;
     return (...args) => {
+        toggleScrollButton();
         let currentScroll = window.pageYOffset;
         if (currentScroll <= 0) {
             styleHeader({
@@ -35,7 +37,16 @@ const scrollHandler = () => {
     }
 }
 
-export default scrollHandler;
+export const toggleScrollButton = () =>{
+    const el =  selector.scrollToTopEl;
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        el.style.visibility = "visible";
+        el.style.opacity = 1;
+      } else {
+        el.style.display = "hidden";
+        el.style.opacity = 0;
+      }
+}
 
 
 

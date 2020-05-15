@@ -1,4 +1,3 @@
-import moment from 'moment';
 import firebase from 'firebase/app';
 import 'firebase/analytics';
 
@@ -22,13 +21,8 @@ firebase.initializeApp(firebaseConfig);
 const analytics = firebase.analytics();
 analytics.logEvent('page_view');
 
+
 (function () {
-    const calculateExperience = () => {
-        const startedCareer = moment('01/01/2016');
-        const months = moment().diff(startedCareer, 'months');
-        const elements = document.querySelectorAll('.overall-experience');
-        elements.forEach(el => el.textContent = `${(months/12).toFixed(1)} years`); 
-    };
 
     setTimeout(() => {
         document.querySelector('#loader').remove();
@@ -42,7 +36,8 @@ analytics.logEvent('page_view');
         require('./smooth-scroll');
         require('./tabs');
 
-        calculateExperience();
+        const helpers = require('./helpers');
+        helpers.calculateExperience();
 
         const AOS = require('aos');
         AOS.init();

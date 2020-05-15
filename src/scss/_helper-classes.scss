@@ -3,7 +3,7 @@
 
   &-lg {
     font-size: 1em;
-    padding: 1.1rem 2.3rem;
+    padding: 1rem 2rem;
   }
 
   &-x-lg {
@@ -44,7 +44,7 @@
     content: "▹";
     position: absolute;
     left: 0px;
-    color: $lime;
+    color: $secendary;
     line-height: 12px;
   }
 }
@@ -57,7 +57,7 @@
   right: 0;
   opacity: 0.4;
   transition: 0.5s ease;
-  background-color: $lime;
+  background-color: $secendary;
 
   &:hover {
     opacity: 0 !important;
@@ -81,7 +81,7 @@
     margin-right: 10px;
     font-family: $monospace-font-family;
     font-weight: normal;
-    color: $lime;
+    color: $secendary;
     font-size: 70%;
     text-align: end;
   }
@@ -123,18 +123,18 @@
   display: inline-block;
   font-size: 1em;
   font-weight: normal;
-  color: $lime;
+  color: $secendary;
 }
 
 .underline {
-  color: $lime;
+  color: $secendary;
   padding: 0;
   position: relative;
   font-family: $sans-serif-font-family;
 
   &::after {
     content: "";
-    background-color: $lime;
+    background-color: $secendary;
     height: 1px;
     display: block;
     position: absolute;

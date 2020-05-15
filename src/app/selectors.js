@@ -7,6 +7,8 @@ const selector = {
     sideSmNavItem: document.querySelectorAll("[aria-label='close-dialog']"),
     gitFork: document.querySelector('#gitFork'),
     gitStars: document.querySelector('#gitStars'),
+    scrollToTopEl: document.querySelector('#scroll-to-top'),
+    overAllExperience: document.querySelector('.overall-experience'),
 }
 
 export default selector;

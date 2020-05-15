@@ -75,6 +75,7 @@ body::-webkit-scrollbar-thumb {
   background-color: $secendary;
   font-size: 17px;
   cursor: pointer;
+  color: $primary;
   transition: visibility 0.01s, opacity 0.5s;
 
   &:focus {

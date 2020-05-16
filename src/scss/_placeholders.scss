@@ -33,9 +33,9 @@
 }
 
 %btn {
-  border: 1px solid $secendary;
+  border: 1px solid $secondary;
   border-radius: 3px;
-  color: $secendary;
+  color: $secondary;
   line-height: 1;
   cursor: pointer;
   margin-left: 10px;
@@ -62,7 +62,7 @@
     left: 0;
     height: 0;
     width: 100%;
-    background-color: $secendary;
+    background-color: $secondary;
     transition: height 0.25s ease;
     z-index: -1;
   }
@@ -78,7 +78,7 @@
   color: $creamy;
 
   &:hover {
-    color: $secendary;
+    color: $secondary;
   }
 }
 

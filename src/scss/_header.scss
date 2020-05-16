@@ -48,25 +48,37 @@
   }
 
   .nav-item-list {
+    @include max-width-48 {
+      margin-right: 0;
+    }
+
     display: flex;
     align-items: center;
     justify-content: center;
     color: $dull-white;
-    counter-reset: item;
+    margin-right: 10px;
 
     li {
       @include max-width-48 {
         font-size: 1.2em;
       }
-      margin: 0 10px;
+      margin: 10px 10px;
       font-size: 0.9em;
 
-      &::before {
-        counter-increment: item;
-        content: "0" counter(item) ".";
-        text-align: right;
-        color: $secendary;
-        font-size: 80%;
+      &::after {
+        content: "";
+        border-bottom: 2px solid $secondary;
+        display: block;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0.1s, opacity 0.5s;
+      }
+
+      &:hover {
+        &::after {
+          visibility: visible;
+          opacity: 1;
+        }
       }
     }
   }
@@ -128,7 +140,7 @@
 
     .hamburger,
     .close {
-      background-color: $secendary;
+      background-color: $secondary;
       position: absolute;
       width: 30px;
       height: 2px;
@@ -141,7 +153,7 @@
         content: "";
         height: 2px;
         display: block;
-        background-color: $secendary;
+        background-color: $secondary;
         position: absolute;
         right: 0;
         left: auto;
@@ -151,7 +163,7 @@
         content: "";
         height: 2px;
         display: block;
-        background-color: $secendary;
+        background-color: $secondary;
         position: absolute;
         right: 0;
         left: auto;

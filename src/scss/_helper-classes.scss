@@ -44,7 +44,7 @@
     content: "▹";
     position: absolute;
     left: 0px;
-    color: $secendary;
+    color: $secondary;
     line-height: 12px;
   }
 }
@@ -57,7 +57,7 @@
   right: 0;
   opacity: 0.4;
   transition: 0.5s ease;
-  background-color: $secendary;
+  background-color: $secondary;
 
   &:hover {
     opacity: 0 !important;
@@ -74,16 +74,16 @@
   margin: 10px 0px 40px;
   font-size: 1.5em;
   width: 100%;
+  color: $secondary;
 
   &::before {
-    counter-increment: section-count;
-    content: "0" counter(section-count) ".";
-    margin-right: 10px;
-    font-family: $monospace-font-family;
-    font-weight: normal;
-    color: $secendary;
-    font-size: 70%;
-    text-align: end;
+    content: "";
+    height: 2px;
+    background-color: $light-white;
+    margin-right: 20px;
+    max-width: 30%;
+    flex: 1;
+    align-self: center;
   }
 
   &::after {
@@ -123,18 +123,19 @@
   display: inline-block;
   font-size: 1em;
   font-weight: normal;
-  color: $secendary;
+  color: $secondary;
 }
 
-.underline {
-  color: $secendary;
+
+.moving-underline {
+  color: $secondary;
   padding: 0;
   position: relative;
   font-family: $sans-serif-font-family;
 
   &::after {
     content: "";
-    background-color: $secendary;
+    background-color: $secondary;
     height: 1px;
     display: block;
     position: absolute;

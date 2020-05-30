@@ -19,8 +19,8 @@ var firebaseConfig = {
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 const analytics = firebase.analytics();
-analytics.logEvent('page_view');
 
+analytics.logEvent('loader');
 
 (function () {
 
@@ -31,6 +31,7 @@ analytics.logEvent('page_view');
         const rootTemplateClone = rootTemplate.content.cloneNode(true);
         document.querySelector('#root').appendChild(rootTemplateClone);
         rootTemplate.remove();
+        analytics.logEvent('page_view');
 
         require('./event-manager');
         require('./smooth-scroll');
@@ -44,6 +45,10 @@ analytics.logEvent('page_view');
 
         const footer = require('./footer');
         footer.loadGitRepoInfo();
+
+        document.addEventListener('click', function(e){
+            analytics.logEvent('click', e.target);
+        })
 
     }, 2500);
 })();

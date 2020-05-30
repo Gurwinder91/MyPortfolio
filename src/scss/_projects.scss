@@ -4,6 +4,13 @@
 
     @extend %section;
 
+    > .feature-project {
+        margin-bottom: 50px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
     .feature-project {
         @include max-width-48 {
             height: 100%;
@@ -20,15 +27,15 @@
         width: 100%;
         max-width: 100%;
         vertical-align: middle;
-        position: relative;        
+        position: relative;
 
-        .overlay{
+        .overlay {
             @include max-width-30 {
                 opacity: 0.88;
             }
-            
+
             background-color: $primary;
-            opacity: 0.80;
+            opacity: 0.8;
             border-radius: 3px;
         }
         img {
@@ -37,18 +44,52 @@
             height: 100%;
             border-radius: 3px;
             object-fit: cover;
-            object-position: center center;    
+            object-position: center center;
         }
-
     }
-    .project-pic {
-        @include max-width-30 {
-            grid-column: col-start 1/ col-end 12;
+
+    .odd {
+        .project-pic {
+            @include max-width-30 {
+                grid-column: col-start 1 / col-end 12;
+            }
+            grid-column: col-start 1 / col-end 7;
         }
+        .feature-project-info {
+            @include max-width-30 {
+                grid-column: col-start 1 / col-end 12;
+            }
+            grid-column: col-start 7 / col-end 12;
+            align-items: flex-end;
+        }
+    }
+
+    .even {
+        .project-pic {
+            @include max-width-30 {
+                grid-column: col-start 1 / col-end 12;
+            }
+            grid-column: col-start 6 / col-end 12;
+        }
+        .feature-project-info {
+            @include max-width-30 {
+                grid-column: col-start 1 / col-end 12;
+            }
+            grid-column: col-start 1 / col-end 6;
+            align-items: flex-start;
+        }
+        .tech-list {
+            > li {
+                margin-left: 0;
+                margin-right: 20px;
+            }
+        }
+    }
+
+    .project-pic {
         position: relative;
-        grid-column: col-start 1/ col-end 7;
         grid-row: 1;
-        transition: all .5s linear .1s;
+        transition: all 0.5s linear 0.1s;
     }
 
     .feature-project-info {
@@ -60,13 +101,10 @@
             right: 0;
             bottom: 0;
             left: 0;
-            grid-column: col-start 1/ col-end 12;
         }
 
         display: flex;
-        align-items: flex-end;
         flex-direction: column;
-        grid-column: col-start 7/ col-end 12;
         grid-row: 1;
 
         h4 {
@@ -86,7 +124,7 @@
             @include max-width-30 {
                 box-shadow: none;
                 background-color: transparent;
-                padding:0;
+                padding: 0;
             }
 
             box-shadow: $description-shadow;

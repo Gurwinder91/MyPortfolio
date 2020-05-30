@@ -10,6 +10,7 @@ export default (event) => {
         classList.add('close');
         selectors.displaySmNav.classList.remove('hide');
         selectors.displaySmNav.dataset.hide = false;
+        document.body.style.overflow = 'hidden';
     } else {
         classList.add('hamburger');
         classList.remove('close');
@@ -26,4 +27,5 @@ export const closeSidenav = () => {
 const hideSidenav = () => {
     selectors.displaySmNav.classList.add('hide');
     selectors.displaySmNav.dataset.hide = true;
+    document.body.style.overflow = 'auto';
 }

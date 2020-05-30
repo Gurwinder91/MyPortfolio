@@ -16,6 +16,10 @@
   @extend %link;
 }
 
+.link.npm{
+  font-size: 1.3em;
+}
+
 .moveup {
   transition: transform 0.2s;
 
@@ -113,6 +117,7 @@
   font-size: 0.85em;
   font-family: $monospace-font-family;
   color: $text-color;
+  z-index: 1;
 
   & > li {
     margin-left: 20px;

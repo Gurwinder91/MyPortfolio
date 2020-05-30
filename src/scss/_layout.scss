@@ -13,7 +13,7 @@ body {
 }
 
 body::-webkit-scrollbar {
-  width: 10px;
+  width: 5px;
 }
 
 body::-webkit-scrollbar-track {
@@ -77,6 +77,7 @@ body::-webkit-scrollbar-thumb {
   cursor: pointer;
   color: $primary;
   transition: visibility 0.01s, opacity 0.5s;
+  z-index: 2;
 
   &:focus {
     color: $primary;
